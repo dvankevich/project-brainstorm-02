@@ -1,34 +1,64 @@
+/* -------- Скидаємо стилі ---------------------------- */
+
+/* Вказуємо box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Прибираємо внутрішні відступи */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Прибираємо зовнішні відступи */
+body,
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
-p {
+p,
+ul[class],
+ol[class],
+li,
+dl,
+dd {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
+/* Виставляємо основні налаштування за замовчуванням для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+/* Видаляємо стандартну стилізацію для всіх ul та il, у яких є атрибут class */
+ul[class],
+ol[class] {
   list-style: none;
 }
 
+/* Елементи a скидаємо до дефолтних стилів */
 a {
-  color: currentColor;
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
+/* Спрощуємо роботу з зображеннями */
 img {
-  display: block;
   max-width: 100%;
   height: auto;
+  display: block;
 }
+
+/* Наслідуємо шрифти для інпутів та кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ---------------------------------------------------------------------------------------- */
