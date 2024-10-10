@@ -1,0 +1,127 @@
+.work-together {
+  max-width: 100%;
+  padding: 80px 20px;
+}
+
+.title-work-together {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 40px;
+}
+.tech-work-together {
+  color: #00b068;
+}
+.text-work-together {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 32px;
+}
+.list-work-together {
+  list-style-type: none;
+}
+.item-work-together {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  margin-bottom: 16px;
+}
+.icon-contacts {
+}
+.link-work-together {
+  text-decoration: none;
+}
+.contact-form {
+  width: 100%;
+  height: 208px;
+  margin-top: 40px;
+}
+.contact-imput {
+  background-color: #e4e5e6;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  height: 48px;
+  border: none;
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+.contact-text {
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  height: 128px;
+  background-color: #e4e5e6;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #292929;
+  resize: none;
+  margin-bottom: 32px;
+}
+.send-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #292929;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 100%;
+  height: 48px;
+  border: none;
+  background-color: #00b068;
+  margin-bottom: 80px;
+}
+.modal-window {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+.modal-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00b068;
+}
+.modal-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #292929;
+}
