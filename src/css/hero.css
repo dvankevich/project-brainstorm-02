@@ -1,0 +1,16 @@
+.hero-title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  font-family: 'Impact', sans-serif;
+  margin-bottom: 40px;
+}
+.hero-title-span {
+  color: #00b068;
+}
+.hero-section {
+  background-image: url(../img/hero\ 64.webp);
+}
