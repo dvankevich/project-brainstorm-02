@@ -58,16 +58,6 @@ html {
 }
 
 
-.div{
-  margin-top: 15px;
-  max-width: 320px;
-  height: 374px;
-  background-color: #990a0a;
-}
-
-
-
-
 /* mobile */
 .container {
   max-width: 360px;
