@@ -7,3 +7,11 @@
   text-transform: uppercase;
   color: var(--black);
 }
+
+.my-projects-icon-order {
+  display: inline-block;
+  width: 30px;
+  height: 24px;
+  stroke: blue;
+  fill: transparent;
+}
