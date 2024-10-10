@@ -1,4 +1,4 @@
-.my-projects-header {
+.mp-header {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 52px;
@@ -8,10 +8,14 @@
   color: var(--black);
 }
 
-.my-projects-icon-order {
-  display: inline-block;
-  width: 30px;
-  height: 24px;
-  stroke: blue;
-  fill: transparent;
+.mp-span {
+  color: var(--accet-green);
+}
+
+.mp-poppins-font {
+  font-family: var(--font-family);
+}
+
+.mp-impact-font {
+  font-family: var(--second-family);
 }
