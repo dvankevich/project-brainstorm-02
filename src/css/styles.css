@@ -1,9 +1,3 @@
-/* import fonts */
-@font-face {
-  font-family: Impact;
-  src: url(../fonts/impact.ttf);
-}
-
 /* Common styles */
 @import 'modern-normalize';
 @import url('./reset.css');

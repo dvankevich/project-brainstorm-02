@@ -1,3 +1,9 @@
+/* import fonts */
+@font-face {
+  font-family: Impact;
+  src: url(../fonts/impact.ttf);
+}
+
 :root {
   --black: #292929;
   --accet-green: #00b068;

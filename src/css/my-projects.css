@@ -5,6 +5,5 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* color: var(--black); */
-  color: red;
+  color: var(--black);
 }
