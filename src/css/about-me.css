@@ -1,0 +1,149 @@
+@media (max-width: 360px) {
+  .aboutme-title {
+    font-family: 'Impact', sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+  .aboutme-title > span {
+    color: #00b068;
+  }
+  .aboutme-img-container {
+    margin-bottom: 40px;
+  }
+  .aboutme-img {
+    display: block;
+    border-radius: 16px;
+    width: 320px;
+    height: 374px;
+  }
+  .aboutme-bio-container {
+    width: 320px;
+    margin-bottom: 40px;
+  }
+
+  .aboutme-bio-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+  }
+
+  .aboutme-bio-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    margin-bottom: 24px;
+  }
+  .edc-role-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+  }
+
+  .edc-role-list {
+    margin-bottom: 40px;
+  }
+  .edc-role-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+  }
+
+  .img-bio-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .aboutme-bio-container {
+    flex: 1;
+    width: 488px;
+    height: 488px;
+  }
+  .aboutme-bio-title {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+
+  .aboutme-img-container {
+    position: relative;
+    flex-shrink: 0;
+  }
+  .aboutme-img {
+    width: 336px;
+    height: 392px;
+    margin-bottom: 60px;
+  }
+  .edc-role-container {
+    width: 704px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .edc-role-title {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+  .edc-role-list {
+    width: 336px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .aboutme-img-container {
+    margin-left: 208px;
+    margin-bottom: 80px;
+  }
+  .aboutme-img {
+    width: 384px;
+    height: 448px;
+  }
+  .edc-role-container {
+    width: 904px;
+    height: 280px;
+    gap: 136px;
+    margin-left: 208px;
+  }
+
+  .edc-role-list {
+    width: 384px;
+    height: 200px;
+  }
+}
