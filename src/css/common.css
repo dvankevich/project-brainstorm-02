@@ -31,6 +31,17 @@
 
 body {
   background: var(--white);
+  font-family: var(--font-family);
+  color: var(--black);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -46,27 +57,49 @@ body {
   overflow: hidden;
 }
 
+
+.div{
+  margin-top: 15px;
+  max-width: 320px;
+  height: 374px;
+  background-color: #990a0a;
+}
+
+
+
+
 /* mobile */
 .container {
-  max-width: 375px;
+  max-width: 360px;
   /* min-width: 320px; */
   padding: 0 20px;
   margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
+.section {
+  padding: 40px 0;
+}
+
+
 /* tablet */
-@media only screen and (min-width: 768px) {
+@media  screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
   }
+
+  .section {
+    padding: 62px 0;
+  }
+
 }
 
 /* desktop */
-@media only screen and (min-width: 1280px) {
+@media  screen and (min-width: 1280px) {
   .container {
-    min-width: 1280px;
+    max-width: 1280px;
+  }
+  .section {
+    padding: 82px 0;
   }
 }
