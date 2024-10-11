@@ -1,9 +1,11 @@
 .work-together {
-  max-width: 100%;
-  padding: 80px 20px;
+}
+.work-together-container {
+  margin-bottom: 80px;
 }
 
 .title-work-together {
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 52px;
   line-height: 123%;
@@ -11,6 +13,7 @@
   text-transform: uppercase;
   color: #292929;
   margin-bottom: 40px;
+  text-align: center;
 }
 .tech-work-together {
   color: #00b068;
@@ -25,7 +28,9 @@
   margin-bottom: 32px;
 }
 .list-work-together {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .item-work-together {
   font-weight: 300;
@@ -34,18 +39,39 @@
   letter-spacing: 0.03em;
   color: #292929;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container-icon {
+  display: flex;
+  gap: 16px;
 }
 .icon-contacts {
+  stroke: #00b068;
+  flex-shrink: 0;
 }
+
 .link-work-together {
-  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #292929;
+  transition: color 0.3s ease;
+}
+.link-work-together:hover,
+.link-work-together:focus {
+  color: #00b068;
 }
 .contact-form {
   width: 100%;
-  height: 208px;
+  /* height: 208px; */
   margin-top: 40px;
+  display: grid;
+  position: relative;
 }
-.contact-imput {
+.contact-input {
   background-color: #e4e5e6;
   border-radius: 8px;
   padding: 16px;
@@ -58,6 +84,7 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   color: #292929;
+  outline: none;
 }
 .contact-text {
   border-radius: 8px;
@@ -73,6 +100,7 @@
   color: #292929;
   resize: none;
   margin-bottom: 32px;
+  outline: none;
 }
 .send-btn {
   font-weight: 500;
@@ -80,19 +108,25 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #292929;
+  color: #f0f0f0;
   border-radius: 8px;
   padding: 12px 24px;
   width: 100%;
   height: 48px;
   border: none;
   background-color: #00b068;
-  margin-bottom: 80px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.send-btn:hover,
+.send-btn:focus {
+  background-color: #009156;
 }
 .modal-window {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
+  opacity: 0;
   left: 0;
   top: 0;
   width: 100%;
@@ -100,13 +134,32 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-content {
-  background-color: white;
-  margin: 15% auto;
-  padding: 20px;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 400px;
-  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 328px;
+  background-color: var(--white);
+  border: 1px solid var(--text);
+  border-radius: 16px;
+  padding: 48px 32px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.modal-close-btn:hover {
+  transform: scale(1.1);
+}
+.modal-close-icon {
+  stroke-width: 2px;
+  stroke: #292929;
+  fill: #292929;
 }
 .modal-title {
   font-weight: 400;
@@ -116,6 +169,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #00b068;
+  margin-bottom: 16px;
 }
 .modal-text {
   font-weight: 300;
@@ -124,4 +178,79 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: #292929;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .title-work-together {
+    width: 100%;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+    text-align: start;
+  }
+
+  .text-work-together {
+    width: 488px;
+    font-size: 20px;
+    line-height: 160%;
+  }
+  .item-work-together {
+    margin-right: 16px;
+  }
+  .list-work-together {
+    flex-direction: row;
+  }
+  .work-together {
+    background-image: url('/img/background-img/decor-bg-3.webp');
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: right top;
+  }
+  .send-btn {
+    width: 173px;
+  }
+  .modal-content {
+    border: 1px solid #e4e5e6;
+    border-radius: 16px;
+    padding: 64px;
+    width: 492px;
+  }
+}
+
+/* DESCTOP */
+@media screen and (min-width: 1280px) {
+  .work-together {
+    background-image: url('/img/background-img/decor-bg-3.webp');
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: right top;
+  }
+  .title-work-together {
+    width: 527px;
+    margin-bottom: 80px;
+  }
+  .text-work-together {
+    margin-bottom: 120px;
+  }
+  .list-work-together {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 258px;
+  }
+  .work-together-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .work-together-right {
+    display: flex;
+    align-items: end;
+  }
+  .contact-form {
+    width: 592px;
+    margin: 0;
+  }
 }

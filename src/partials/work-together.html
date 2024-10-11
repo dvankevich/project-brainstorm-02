@@ -1,61 +1,88 @@
 <section class="work-together section" id="work-together">
-  <div class="container">
-    <h2 class="title-work-together">
-      LET'S <span class="tech-work-together">WORK TOGETHER</span>
-    </h2>
-    <p class="text-work-together">
-      Contact me to transform your ideas into exceptional solutions.
-    </p>
-    <ul class="list-work-together">
-      <!-- <svg class="icon-contacts" width="24px" height="24px">
-        <use href=""></use>
-      </svg> -->
-      <li class="item-work-together">
-        <a class="link-work-together" href="+380904567890">+38 090 456 78 90</a>
-      </li>
-      <!-- <svg class="icon-contacts" width="24px" height="24px">
-        <use href=""></use>
-      </svg> -->
-      <li class="item-work-together">
-        <a class="link-work-together" href="lloydjefferson@gmail.com"
-          >lloydjefferson@gmail.com</a
+  <div class="work-together-container container">
+    <div class="work-together-left">
+      <h2 class="title-work-together">
+        LET'S
+        <span class="tech-work-together">WORK TOGETHER</span>
+        <div class="decor"></div>
+      </h2>
+
+      <p class="text-work-together">
+        Contact me to transform your ideas into exceptional solutions.
+      </p>
+      <ul class="list-work-together">
+        <li class="item-work-together">
+          <svg class="icon-contacts" width="24" height="24">
+            <use href="/img/sprite.svg#phone"></use>
+          </svg>
+          <a class="link-work-together" href="tel:+380904567890"
+            >+38 090 456 78 90</a
+          >
+        </li>
+
+        <li class="item-work-together">
+          <svg class="icon-contacts" width="24" height="24">
+            <use href="/img/sprite.svg#mail"></use>
+          </svg>
+          <a class="link-work-together" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+
+        <li class="item-work-together">
+          <svg class="icon-contacts" width="24" height="24">
+            <use href="/img/sprite.svg#point"></use>
+          </svg>
+          <a
+            class="link-work-together"
+            href="https://maps.google.com/?q=USA,+New+York"
+            >USA, New York</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="work-together-right">
+      <form id="form" class="contact-form">
+        <input
+          class="contact-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email*"
+          required
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          autocomplete="on"
+        /><label for="email" class="visually-hidden"
+          >Invalid email, try again</label
         >
-      </li>
-      <!-- <svg class="icon-contacts" width="24px" height="24px">
-        <use href=""></use>
-      </svg> -->
-      <li class="item-work-together">
-        <a class="link-work-together" href="USA, New York">USA, New York</a>
-      </li>
-    </ul>
-    <form id="form" class="contact-form">
-      <input
-        class="contact-imput"
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Your email*"
-        required
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-      />
-      <textarea
-        class="contact-text"
-        id="message"
-        name="message"
-        placeholder="Message"
-        required
-      ></textarea>
-      <button class="send-btn" type="submit">SEND MESSAGE</button>
-    </form>
+        <textarea
+          class="contact-text"
+          id="message"
+          name="message"
+          placeholder="Message"
+          required
+          autocomplete="on"
+        ></textarea
+        ><label for="message" class="visually-hidden"
+          >the field must be filled</label
+        >
+        <button class="send-btn" type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+    <div id="modal" class="modal-window">
+      <div class="modal-content">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="32" height="32">
+            <use href="/img/sprite.svg#x"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
+        <p class="modal-text">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
-<div id="modal" class="modal-window">
-  <div class="modal-content">
-    <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
-
-    <p class="modal-text">
-      The manager will contact you shortly to discuss further details and
-      opportunities for cooperation. Please stay in touch.
-    </p>
-  </div>
-</div>
