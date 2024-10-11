@@ -103,6 +103,8 @@
         letter-spacing: 0.03em;
         color: var(--black);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: scroll;
+        scroll-behavior: smooth;
     }
 
     .header-link:hover,
@@ -261,8 +263,8 @@
     color: var(--accet-green);
 }
 
-.header-mobile-menu{
+.header-mobile-menu {
     background-image: url(../img/background-img/decor-bg-1mob.webp);
-        background-repeat: no-repeat;
-        background-size: 320px 704px;
+    background-repeat: no-repeat;
+    background-size: 320px 704px;
 }
