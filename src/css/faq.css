@@ -100,10 +100,6 @@
     all: unset !important;
 }
 
-.ac .ac-trigger:focus {
-    all: unset !important;
-}
-
 .ac.is-active>.ac-header .ac-trigger::after {
     all: unset !important;
 }
