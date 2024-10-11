@@ -5,17 +5,37 @@
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .mp-span {
   color: var(--accet-green);
 }
 
-.mp-poppins-font {
-  font-family: var(--font-family);
+.mp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.mp-impact-font {
-  font-family: var(--second-family);
+.mp-list-item {}
+
+.mp-image {
+  border-radius: 16px;
+}
+
+.mp-skills {}
+
+.mp-name {}
+
+.mp-visit-link {}
+
+.mp-visit-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  stroke-width: 2px;
+  stroke: var(--accet-green);
+  fill: transparent;
 }
