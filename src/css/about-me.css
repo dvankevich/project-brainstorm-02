@@ -13,13 +13,13 @@
     color: #00b068;
   }
   .aboutme-img-container {
-    margin-bottom: 40px;
   }
   .aboutme-img {
     display: block;
     border-radius: 16px;
     width: 320px;
     height: 374px;
+    margin-bottom: 40px;
   }
   .aboutme-bio-container {
     width: 320px;
