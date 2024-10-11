@@ -1,0 +1,134 @@
+/* .faq-title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    width: 520px;
+}*/
+
+.faq-title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    width: 320px;
+    margin-bottom: 40px;
+}
+
+.faq-title span {
+    color: #00b068;
+}
+
+.faq-list {
+    max-width: 320px;
+}
+
+.faq-list-item {
+    padding: 28px 24px;
+}
+
+.ac .ac-trigger {
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.faq-list-item-title {
+    width: 224px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #292929;
+    display: block;
+}
+
+.faq-list-item-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+
+}
+
+.faq-icon-non-visible {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    stroke: #292929;
+    fill: transparent;
+}
+
+.faq-icon-down {
+    width: 32px;
+    height: 32px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: #292929;
+    fill: #292929;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ac.is-active .faq-icon-down {
+    transform: scaleY(-1);
+}
+
+.ac.is-active .ac-panel {
+    margin-top: 24px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .faq-title {
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        width: 592px;
+        margin-bottom: 60px;
+    }
+    .faq-list {
+        max-width: 704px;
+    }
+    .faq-list-item-title {
+        width: 600px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+    .faq-section {
+        display: flex;
+        gap: 104px;
+    }
+    .faq-title {
+        max-width: 520px;
+    }
+    .faq-list {
+        max-width: 592px;
+        margin-top: 276px !important;
+    }
+    .faq-list-item-title {
+        width: 488px;
+    }
+    .faq-list-item-text {
+        width: 544px;
+    }
+}
