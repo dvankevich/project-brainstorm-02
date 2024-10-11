@@ -1,17 +1,41 @@
-.my-projects-header {
+.mp-header {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 52px;
   line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.my-projects-icon-order {
+.mp-span {
+  color: var(--accet-green);
+}
+
+.mp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mp-list-item {}
+
+.mp-image {
+  border-radius: 16px;
+}
+
+.mp-skills {}
+
+.mp-name {}
+
+.mp-visit-link {}
+
+.mp-visit-icon {
   display: inline-block;
-  width: 30px;
-  height: 24px;
-  stroke: blue;
+  width: 18px;
+  height: 18px;
+  stroke-width: 2px;
+  stroke: var(--accet-green);
   fill: transparent;
 }
