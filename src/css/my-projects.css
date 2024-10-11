@@ -19,8 +19,6 @@
   gap: 40px;
 }
 
-.mp-list-item {}
-
 .mp-image {
   border-radius: 16px;
 }
@@ -164,4 +162,18 @@
 }
 
 /* desktop */
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+  .mp-header {
+    margin-bottom: 80px;
+  }
+
+  .mp-list {
+    gap: 80px;
+  }
+
+  .mp-list-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 136px;
+  }
+}
