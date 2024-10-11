@@ -23,11 +23,9 @@
 }
 
 .ac .ac-trigger {
-    all: unset !important;
     text-align: left;
     width: 100%;
-    all: unset;
-    display: flex;
+    display: flex !important;
     align-items: flex-start;
     justify-content: space-between;
     padding: 0;
@@ -93,7 +91,6 @@
 }
 
 .ac {
-    all: unset !important;
     border-bottom: 1px solid #e4e5e6;
     background-color: #F0F0F0;
     box-sizing: border-box;
@@ -103,16 +100,14 @@
     all: unset !important;
 }
 
-.ac .ac-trigger:focus {
-    all: unset !important;
-}
-
-.ac .ac-panel .ac-text {
-    all: unset !important;
-}
-
 .ac.is-active>.ac-header .ac-trigger::after {
     all: unset !important;
+}
+
+.is-active {
+    background: #bcdfd1 !important;
+    border-radius: 16px !important;
+    border: 0 !important;
 }
 
 /* tablet */
