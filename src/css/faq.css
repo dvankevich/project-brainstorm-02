@@ -117,6 +117,10 @@
     .faq-section {
         display: flex;
         gap: 104px;
+        background-image: url(../img/background-img/decor-bg-4.webp);
+        background-repeat: no-repeat;
+        background-size: 526px 408px;
+        background-position: left bottom;
     }
     .faq-title {
         max-width: 520px;
