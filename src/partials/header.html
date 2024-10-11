@@ -15,7 +15,7 @@
       </ul>
     </nav>
 
-    <button class="header-btn" type="button">
+    <button class="header-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
       <svg class="header-btn-icon" width="32" height="32">
         <use href="/img/sprite.svg#burger"></use>
       </svg>
@@ -26,12 +26,12 @@
 
 <!-- Mobile menu -->
 
-<div class="header-mobile-menu-container">
+<div class="header-mobile-menu-container js-menu-container" id="mobile-menu">
   <div class="header-mobile-menu">
     <div class="header-logo-container">
       <a class="header-logo" href="#top">Lloyd<span class="header-logo-tech">Jefferson.</span></a>
     </div>
-    <button class="header-mobile-menu-close">
+    <button class="header-mobile-menu-close js-close-menu">
       <svg width="32" height="32" class="header-mobile-menu-close-icon">
         <use href="/img/sprite.svg#x"></use>
       </svg>
