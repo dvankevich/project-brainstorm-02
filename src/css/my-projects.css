@@ -28,7 +28,7 @@
 .mp-skills {
   font-weight: 300;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   padding-top: 12px;
 }
@@ -116,3 +116,52 @@
 .mp-load-more-button:focus {
   color: var(--accet-green);
 }
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .mp-header {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
+
+  .mp-list {
+    gap: 60px;
+  }
+
+  .mp-image {
+    border-radius: 24px;
+  }
+
+  .mp-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mp-skills {
+    padding-top: 16px;
+  }
+
+  .mp-name {
+    padding: 0;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .mp-visit-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mp-load-more-button {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {}
