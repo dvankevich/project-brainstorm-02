@@ -106,9 +106,6 @@ body {
   border-radius: 2px;
  } 
 
-.rotated-text {
-transform: rotate(2deg);
-
 }
 @keyframes marqueeLine {
   from {
