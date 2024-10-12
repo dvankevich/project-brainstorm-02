@@ -56,7 +56,6 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: #292929;
-
 }
 
 .faq-icon-non-visible {
@@ -91,6 +90,7 @@
 }
 
 .ac {
+    margin-top: 0 !important;
     border-bottom: 1px solid #e4e5e6;
     background-color: #F0F0F0;
     box-sizing: border-box;
