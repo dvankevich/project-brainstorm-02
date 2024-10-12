@@ -1,57 +1,121 @@
 body {
-    margin: 0;
+  margin: 0;
+}
+
+.marquee {
+  overflow: hidden;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #292929;
+  background-color: #BCDFD1;
+
+}
+
+.marquee__inner {
+  display: flex;
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  margin: 1;
+  padding: 5px 15px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.square {
+  color: #5D6662;
+  font-size: 20px; 
+  margin: 0 35px; 
+  vertical-align: middle;
+  line-height: 5; 
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  opacity: 1;
+  background: #00B068; 
+  border-radius: 2px; 
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
   }
   
-  .marquee {
-    overflow: hidden;
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 48px;
-    text-transform: uppercase;
-    color: #292929;
-    background-color: #BCDFD1;
-  
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Second line */
+
+
+body {
+  margin: 0;
+}
+
+.marquee_class {
+  overflow: hidden;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #00B068;
+  background-color: #E4E5E6;
+
+}
+
+.marquee__inner {
+  display: flex;
+}
+
+.marquee__lined {
+  flex-shrink: 0;
+  margin: 1;
+  padding: 5px 15px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.squared {
+  color: #5D6662;
+  font-size: 20px;
+  margin: 0 35px;
+  vertical-align: middle;
+  line-height: 1;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  opacity: 1;
+  background: #292929;
+  border-radius: 2px;
+ } 
+
+.rotated-text {
+transform: rotate(2deg);
+
+}
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
   }
   
-  .marquee__inner {
-    display: flex;
+  to {
+    transform: translateX(-100%);
   }
-  
-  .marquee__line {
-    flex-shrink: 0;
-    margin: 1;
-    padding: 5px 15px;
-    min-width: 100%;
-    white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-  }
-  
-  .square {
-    color: #5D6662;
-    font-size: 20px; 
-    margin: 0 35px; 
-    vertical-align: middle;
-    line-height: 5; 
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    opacity: 1;
-    background: #00B068; 
-    border-radius: 2px; 
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-  }
-  
-  @keyframes marqueeLine {
-    from {
-      transform: translateX(0);
-    }
-    
-    to {
-      transform: translateX(-100%);
-    }
-  }
+}
