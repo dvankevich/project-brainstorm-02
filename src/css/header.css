@@ -86,6 +86,7 @@ body.light {
     -moz-transition: 0.5s ease;
     -ms-transition: 0.5s ease;
     -o-transition: 0.5s ease;
+    left: 20px;
 }
 
 .label:hover {
@@ -161,8 +162,6 @@ body.light {
 #switch:active+.label::before {
     width: 35px;
 }
-
-
 
 .header {
     width: 100%;
@@ -246,7 +245,7 @@ body.light {
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 166px;
+        gap: 78px;
         padding: 36px 32px;
     }
 
@@ -264,13 +263,17 @@ body.light {
         color: var(--accet-green);
     }
 
+    .label {
+        left: 60px;
+    }
+
     .header-list {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 40px;
-        width: 305px;
+        gap: 20px;
+        width: 393px;
     }
 
     .header-link {
@@ -308,7 +311,7 @@ body.light {
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 678px;
+        gap: 315px;
         padding: 36px 32px;
     }
 
@@ -326,13 +329,17 @@ body.light {
         color: var(--accet-green);
     }
 
+    .label {
+        left: 260px;
+    }
+
     .header-list {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
         gap: 40px;
-        width: 305px;
+        width: 678px;
     }
 
     .header-link {
@@ -342,6 +349,7 @@ body.light {
         letter-spacing: 0.03em;
         color: var(--black);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        justify-content: flex-start;
     }
 
     .header-link:hover,
@@ -456,4 +464,4 @@ body.light {
     background-image: url(../img/background-img/decor-bg-1mob.webp);
     background-repeat: no-repeat;
     background-size: 320px 704px;
-}
+    }
