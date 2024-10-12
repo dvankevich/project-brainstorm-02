@@ -1,7 +1,6 @@
 .work-together {
 }
 .work-together-container {
-  margin-bottom: 80px;
 }
 
 .title-work-together {
@@ -86,6 +85,10 @@
   color: #292929;
   outline: none;
 }
+.contact-input:hover,
+.contact-input:focus {
+  box-shadow: 1px 1px 3px rgb(169, 169, 169);
+}
 .contact-text {
   border-radius: 8px;
   padding: 16px;
@@ -102,6 +105,11 @@
   margin-bottom: 32px;
   outline: none;
 }
+.contact-text:hover,
+.contact-text:focus {
+  box-shadow: 1px 1px 3px rgb(169, 169, 169);
+}
+
 .send-btn {
   font-weight: 500;
   font-size: 16px;
@@ -126,7 +134,6 @@
   display: none;
   position: fixed;
   z-index: 999;
-  opacity: 0;
   left: 0;
   top: 0;
   width: 100%;
