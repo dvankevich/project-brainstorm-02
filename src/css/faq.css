@@ -24,7 +24,6 @@
 
 .faq-list-item {
     padding: 28px 24px;
-    transition: background-color, border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 5px;
 }
 
@@ -98,8 +97,10 @@
 
 .ac {
     margin-top: 0 !important;
-    border-bottom: 1px solid var(--light-grey) !important;
+    border: none !important;
     background-color: transparent !important;
+    border-bottom: 1px solid var(--light-grey) !important;
+    transition: border-radius, 250ms cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .ac .ac-trigger::after {
@@ -112,8 +113,9 @@
 
 .is-active {
     background-color: var(--light-accent) !important;
+    transition: background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     border-radius: 16px !important;
-    border: 0 !important;
+    border: none !important;
 }
 
 /* tablet */
@@ -140,18 +142,18 @@
     .faq-section {
         display: flex;
         gap: 104px;
-        background-image: url(../img/background-img/decor-bg-4.webp);
-        background-repeat: no-repeat;
-        background-size: 526px 408px;
-        background-position: left 32px bottom;
     }
     @media (min-resolution: 192dpi) {
-        .faq-section {
+        .faq-title {
             background-image: url(../img/background-img/decor-bg-4-desk-2x.webp);
         }
     }
     .faq-title {
-        max-width: 520px;
+        margin-bottom: 0;
+        background-image: url(../img/background-img/decor-bg-4.webp);
+        background-repeat: no-repeat;
+        background-size: 526px 408px;
+        background-position: left 0 top 600px;
     }
     .faq-list {
         max-width: 592px;
