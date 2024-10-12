@@ -6,11 +6,9 @@
 .header-section {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    /* gap: 108px; */
-    gap: 56px;
-    padding: 20px 20px;
+    justify-content: space-between;
+
+    padding: 16px 20px;
 }
 
 .header-logo {
@@ -40,9 +38,6 @@
 }
 
 .header-btn-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
     stroke: var(--black);
 }
 
