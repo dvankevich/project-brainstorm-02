@@ -5,13 +5,13 @@
     line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #292929;
+    color: var(--black);
     width: 320px;
     margin-bottom: 40px;
 }
 
 .faq-title span {
-    color: #00b068;
+    color: var(--accet-green);
 }
 
 .faq-list {
@@ -24,8 +24,7 @@
 
 .faq-list-item {
     padding: 28px 24px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 16px;
+    transition: background-color, border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 5px;
 }
 
@@ -52,7 +51,7 @@
     line-height: 1.55;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #292929;
+    color: var(--black) !important;
     display: block;
 }
 
@@ -62,14 +61,14 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: #292929;
+    color: var(--black) !important;
 }
 
 .faq-icon-non-visible {
     display: inline-block;
     width: 32px;
     height: 32px;
-    stroke: #292929;
+    color: var(--black) !important;
     fill: transparent;
 }
 
@@ -83,8 +82,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    stroke: #292929;
-    fill: #292929;
+    stroke: var(--black) !important;
+    fill: var(--black) !important;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
 }
@@ -99,9 +98,8 @@
 
 .ac {
     margin-top: 0 !important;
-    border-bottom: 1px solid #e4e5e6;
-    background-color: #F0F0F0;
-    box-sizing: border-box;
+    border-bottom: 1px solid var(--light-grey) !important;
+    background-color: transparent !important;
 }
 
 .ac .ac-trigger::after {
@@ -113,7 +111,7 @@
 }
 
 .is-active {
-    background-color: #bcdfd1 !important;
+    background-color: var(--light-accent) !important;
     border-radius: 16px !important;
     border: 0 !important;
 }
@@ -145,8 +143,12 @@
         background-image: url(../img/background-img/decor-bg-4.webp);
         background-repeat: no-repeat;
         background-size: 526px 408px;
-        background-position: left bottom;
-        background-position: 20px left bottom;
+        background-position: left 32px bottom;
+    }
+    @media (min-resolution: 192dpi) {
+        .faq-section {
+            background-image: url(../img/background-img/decor-bg-4-desk-2x.webp);
+        }
     }
     .faq-title {
         max-width: 520px;
