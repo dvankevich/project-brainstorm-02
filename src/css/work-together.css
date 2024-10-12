@@ -12,7 +12,6 @@
   text-transform: uppercase;
   color: var(--black);
   margin-bottom: 40px;
-  text-align: center;
 }
 .tech-work-together {
   color: var(--accet-green);
@@ -38,10 +37,10 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--black);
-  margin-bottom: 16px;
+
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 .container-icon {
   display: flex;
@@ -89,6 +88,13 @@
 .contact-input:hover,
 .contact-input:focus {
   box-shadow: 1px 1px 3px rgb(169, 169, 169);
+}
+.icon-ok {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  fill: green;
+  display: none;
 }
 .contact-text {
   border-radius: 8px;
@@ -141,6 +147,9 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.modal-window {
+  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
 .modal-content {
   position: absolute;
   top: 50%;
@@ -153,6 +162,7 @@
   border-radius: 16px;
   padding: 48px 32px;
 }
+
 .modal-close-btn {
   position: absolute;
   top: 20px;
@@ -178,6 +188,7 @@
   color: var(--accet-green);
   margin-bottom: 16px;
 }
+
 .modal-text {
   font-weight: 300;
   font-size: 16px;
@@ -209,11 +220,13 @@
   }
   .list-work-together {
     flex-direction: row;
+    gap: 0;
   }
   .work-together {
-    background-image: url('/img/background-img/decor-bg-3.webp');
+    background-image: url('/img/background-img/decor-bg-7tab-1x.webp') 1x,
+      url(../img/background-img/decor-bg-7tab-2x.webp) 2x;
     background-repeat: no-repeat;
-    background-size: 526px 408px;
+    background-size: 336px 260px;
     background-position: right top;
   }
   .send-btn {
@@ -232,7 +245,7 @@
   .work-together {
     background-image: url('/img/background-img/decor-bg-3.webp');
     background-repeat: no-repeat;
-    background-size: 526px 408px;
+    background-size: 526px;
     background-position: right top;
   }
   .title-work-together {
