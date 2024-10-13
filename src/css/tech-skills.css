@@ -52,7 +52,7 @@
   }
 }
 
-/* Вторая секция */
+/* Second */
 
 .marquee_class {
   overflow: hidden;
@@ -64,10 +64,7 @@
   color: #00B068;
   background-color: #E4E5E6;
   padding: 10px;
-}
 
-.marquee__inner {
-  display: flex;
 }
 
 .m_rotate {
@@ -86,28 +83,8 @@
   opacity: 1;
   background: #292929;
   border-radius: 2px;
-  transform: rotate(2deg);
-  /* Наклон для второго блока */
 }
 
-.marquee__line {
-  flex-shrink: 0;
-  margin: 0;
-  padding: 5px 15px;
-  min-width: 100%;
-  white-space: nowrap;
-  animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes marqueeLine {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
+to {
+  transform: translateX(-100%);
 }
