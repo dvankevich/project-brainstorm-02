@@ -157,7 +157,7 @@
   transform: translate(-50%, -50%);
   width: 320px;
   height: 328px;
-  background-color: var(--white);
+  background-color: var(--mobile-menu-light);
   border: 1px solid var(--text);
   border-radius: 16px;
   padding: 48px 32px;
@@ -176,7 +176,7 @@
 }
 .modal-close-icon {
   stroke-width: 2px;
-  stroke: var(--black);
+  stroke: var(--text-dark);
 }
 .modal-title {
   font-weight: 400;
