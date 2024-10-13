@@ -45,6 +45,54 @@
     object-fit: cover;
 }
 
+/* Налаштування картки відгуку */
+.reviews-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 24px;
+    max-width: 528px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 224px;
+}
+
+/* Налаштування тексту відгуку */
+.reviews-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(12, 12, 12, 0.7);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Обгортка для зображення і імені */
+.reviews-footer {
+    display: flex;
+    align-items: center;
+    margin-top: auto; /* Щоб зображення і ім'я були внизу картки */
+}
+
+/* Налаштування зображення */
+.reviews-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px; /* Відступ справа від зображення до імені */
+    border-radius: 50%; /* Округлення зображення */
+}
+
+/* Налаштування заголовку (ім'я) */
+.reviews-list-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+    margin: 0; /* Забираємо зайві відступи */
+}
+
 /* Налаштування заголовку та тексту відгуків */
 .reviews-list-title {
     font-weight: 500;
@@ -109,7 +157,7 @@
     background-image: linear-gradient(120deg, #3350e9 30%, #0c0c0c);
 }
 
-/* Налаштування кнопок */
+/* Налаштування кнопок навігації Swiper */
 .swiper-button-next,
 .swiper-button-prev {
     color: #0c0c0c;
@@ -117,16 +165,28 @@
     background-color: #fff;
     padding: 10px;
     border-radius: 50%;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 20px; /* Відступ від нижнього краю */
+    right: 20px;  /* Відступ від правого краю */
+    z-index: 10;
+}
+
+/* Вирівнювання кнопок наступна і попередня поруч внизу праворуч */
+.swiper-button-prev {
+    right: 70px; /* Попередня кнопка зміщена лівіше від наступної */
 }
 
 .swiper-button-next {
-    right: 10px;
+    right: 20px;
 }
 
-.swiper-button-prev {
-    left: 10px;
+/* hover ефект для кнопок */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #0c0c0c;
+    color: #fff;
+    border-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -166,4 +226,22 @@
     .reviews-items {
         max-width: 528px;
     }
+}
+
+.error-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
 }
