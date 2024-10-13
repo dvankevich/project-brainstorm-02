@@ -1,40 +1,3 @@
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
-// Підключаємо Swiper
-const swiper = new Swiper('.swiper', {
-    loop: false, // Відключає зациклення слайдів
-    slidesPerView: 1, // Відображає по одному слайду
-    spaceBetween: 20, // Відстань між слайдами
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    keyboard: {
-        enabled: true, // Дозволяє користуватись клавіатурою
-        onlyInViewport: true,
-    },
-    mousewheel: {
-        enabled: true, // Дозволяє скролінг мишею
-    },
-    on: {
-        reachBeginning: function () {
-            // Якщо досягли початку списку, блокуємо кнопку "prev"
-            document.querySelector('.swiper-button-prev').classList.add('swiper-button-disabled');
-        },
-        reachEnd: function () {
-            // Якщо досягли кінця списку, блокуємо кнопку "next"
-            document.querySelector('.swiper-button-next').classList.add('swiper-button-disabled');
-        },
-        fromEdge: function () {
-            // Якщо користувач не на початку або кінці, знімаємо блокування кнопок
-            document.querySelector('.swiper-button-prev').classList.remove('swiper-button-disabled');
-            document.querySelector('.swiper-button-next').classList.remove('swiper-button-disabled');
-        }
-    }
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     const reviewsList = document.querySelector('.reviews-list');
     const errorPopup = document.getElementById('error-popup');
@@ -72,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Функція для отримання відгуків з бекенда
     function fetchReviews() {
-        fetch('https://your-backend-url.com/reviews')
+        fetch('https://portfolio-js.b.goit.study/api/reviews')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Error fetching reviews');
@@ -90,25 +53,38 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // Ініціалізація Swiper (тільки після отримання відгуків)
+    // Ініціалізація Swiper
     function initializeSwiper() {
-        new Swiper('.swiper', {
+        const swiper = new Swiper('.swiper', {
+            loop: false,
+            slidesPerView: 1,
+            spaceBetween: 20,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
             keyboard: {
                 enabled: true,
+                onlyInViewport: true,
             },
-            spaceBetween: 30,
+            mousewheel: {
+                enabled: true,
+            },
+            on: {
+                reachBeginning: function () {
+                    this.navigation.prevEl.classList.add('swiper-button-disabled');
+                },
+                reachEnd: function () {
+                    this.navigation.nextEl.classList.add('swiper-button-disabled');
+                },
+                fromEdge: function () {
+                    this.navigation.prevEl.classList.remove('swiper-button-disabled');
+                    this.navigation.nextEl.classList.remove('swiper-button-disabled');
+                }
+            }
         });
     }
 
     // Викликаємо функцію отримання відгуків при завантаженні сторінки
     fetchReviews();
 });
-

@@ -3,9 +3,9 @@
 }
 
 .reviews-title {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 108px;
-    line-height: 1;
+    line-height: 1.15;
     letter-spacing: -0.02em;
     color: #292929;
     margin-bottom: 40px;
@@ -76,7 +76,8 @@
     padding: 5px 5px 10px;
     margin: 0 auto;
     max-width: 100%; /* Задаємо максимальну ширину для контейнера слайдера */
-    overflow: hidden; /* Приховуємо все, що виходить за межі */
+    
+    position: relative; /* Забезпечує правильне позиціювання кнопок */
 }
 
 .swiper-wrapper {
@@ -123,25 +124,25 @@
     border: 2px solid #0c0c0c;
     background-color: #fff;
     padding: 10px;
-    border-radius: 50%;
     position: absolute;
-    bottom: 20px; /* Відступ від нижнього краю */
+    bottom: -90px; /* Відступ від нижнього краю */
     z-index: 10;
+    border-radius: 10px;
 }
 
 /* Вирівнювання кнопок наступна і попередня поруч внизу праворуч */
 .swiper-button-prev {
-    right: 70px; /* Попередня кнопка зміщена лівіше від наступної */
+    right: 150px; /* Попередня кнопка зміщена лівіше від наступної */
 }
 
 .swiper-button-next {
-    right: 20px;
+    right: 70px;
 }
 
 /* hover ефект для кнопок */
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background-color: #0c0c0c;
+    
     color: #fff;
     border-color: #fff;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -204,22 +205,26 @@
     display: none;
 }
 
-/* стрілки */
+/* Стилізація кнопок як стрілки */
 .swiper-button-next::before,
 .swiper-button-prev::before {
-    content: ''; /* Очищаємо контент псевдоелементів */
+    content: ''; /* Додаємо пустий контент для стрілок */
     display: inline-block;
-    width: 10px; /* Ширина стрілки */
-    height: 10px; /* Висота стрілки */
-    border-top: 2px solid #0c0c0c; /* Верхня лінія стрілки */
-    border-right: 2px solid #0c0c0c; /* Права лінія стрілки */
-    transform: rotate(45deg); /* Нахил для створення стрілки */
+    width: 12px; /* Ширина стрілки */
+    height: 12px; /* Висота стрілки */
+    border: solid #0c0c0c; /* Колір стрілки */
+    border-width: 0 2px 2px 0; /* Створення форми стрілки через бордери */
+    padding: 5px;
+    transform: rotate(45deg); /* Поворот для створення вигляду стрілки */
 }
 
-.swiper-button-prev::before {
-    transform: rotate(-135deg); /* Нахил для створення стрілки вліво */
-}
-
+/* Наступна кнопка (стрілка вправо) */
 .swiper-button-next::before {
-    transform: rotate(45deg); /* Нахил для створення стрілки вправо */
+    transform: rotate(-45deg); /* Поворот стрілки вправо */
 }
+
+/* Попередня кнопка (стрілка вліво) */
+.swiper-button-prev::before {
+    transform: rotate(135deg); /* Поворот стрілки вліво */
+}
+
