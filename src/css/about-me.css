@@ -22,7 +22,7 @@
     margin-bottom: 40px;
   }
   .aboutme-bio-container {
-    width: 320px;
+    max-width: 320px;
     margin-bottom: 40px;
   }
 
@@ -32,7 +32,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--text-dark);
     margin-bottom: 32px;
   }
 
@@ -41,7 +41,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: var(--black);
+    color: var(--text-dark);
     margin-bottom: 24px;
   }
 
@@ -54,7 +54,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--text-dark);
     margin-bottom: 32px;
   }
 
@@ -66,7 +66,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: var(--black);
+    color: var(--text-dark);
   }
   .edc-role-item::before {
     content: '';
@@ -91,12 +91,9 @@
   .img-bio-container {
     display: flex;
     justify-content: space-between;
-    align-items: start;
-
     position: relative;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start;
     background-image: url(/img/background-img/decor-bg-2.webp);
     background-repeat: no-repeat;
@@ -158,7 +155,6 @@
 
   .aboutme-img-container {
     margin-left: 208px;
-    margin-bottom: 80px;
   }
   .aboutme-img {
     width: 384px;
