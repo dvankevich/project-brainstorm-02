@@ -12,7 +12,15 @@
 
 .marquee__inner {
   display: flex;
+  padding-left: 160px;
 }
+
+.marquee__inner__2 {
+  display: flex;
+  padding-right: 160px;
+}
+
+
 
 .marquee__line {
   flex-shrink: 0;
@@ -24,9 +32,10 @@
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
-.square {
+.marquee__square__2 {
   color: #5D6662;
   font-size: 20px;
   margin: 0 35px;
@@ -51,7 +60,7 @@
     transform: translateX(-100%);
   }
 }
- 
+
 /* Second */
 
 .marquee_class {
