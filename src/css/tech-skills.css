@@ -12,7 +12,15 @@
 
 .marquee__inner {
   display: flex;
+
 }
+
+.marquee__inner__2 {
+  display: flex;
+  padding-right: 160px;
+}
+
+
 
 .marquee__line {
   flex-shrink: 0;
@@ -24,6 +32,7 @@
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 .square {
@@ -51,7 +60,7 @@
     transform: translateX(-100%);
   }
 }
- 
+
 /* Second */
 
 .marquee_class {
