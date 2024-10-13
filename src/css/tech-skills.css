@@ -76,6 +76,7 @@ body {
 
 .m_rotate {
 transform: rotate(2deg);
+margin-top: 20px;
 }
 
 .marquee__square {
