@@ -1,79 +1,70 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-}
-
 .reviews-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background-color: #f5f5f5;
-}
-
-.reviews-title {
-    font-size: 48px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 30px;
-}
-
-.review {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
     text-align: center;
+    padding: 20px;
+}
+
+.reviews-section h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
     margin-bottom: 20px;
 }
 
-.review-text {
-    font-size: 18px;
+.review-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card p {
+    font-size: 14px;
     color: #333;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
 .review-author {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.author-image {
-    width: 50px;
-    height: 50px;
+.review-author img {
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.author-name {
+.author-info h3 {
     font-size: 16px;
+    margin: 0;
     font-weight: bold;
 }
 
-.review-navigation {
+.nav-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.nav-btn {
-    font-size: 24px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+.nav-buttons button {
+    background-color: black;
+    color: white;
     border: none;
-    cursor: pointer;
+    padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.nav-btn:hover {
-    background-color: #555;
+.nav-buttons button:hover {
+    background-color: #333;
 }

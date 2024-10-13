@@ -1,13 +1,24 @@
-console.log("reviews");
-// Example script for navigation buttons (this is just a placeholder)
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+const reviewsContainer = document.querySelector('.reviews-container');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-// Example event listeners for buttons (real functionality to be added)
+let currentIndex = 0;
+
 prevBtn.addEventListener('click', () => {
-    console.log('Previous review');
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+    }
 });
 
 nextBtn.addEventListener('click', () => {
-    console.log('Next review');
+    if (currentIndex < reviewsContainer.children.length - 1) {
+        currentIndex++;
+        updateSlider();
+    }
 });
+
+function updateSlider() {
+    const cardWidth = reviewsContainer.children[0].offsetWidth + 20; // card width + margin
+    reviewsContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
