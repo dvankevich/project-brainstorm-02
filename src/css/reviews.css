@@ -28,34 +28,20 @@
     flex-direction: column;
     align-items: flex-start;
     border-radius: 20px;
-    padding: 24px;
+    padding: 32px;
     max-width: 528px;
     background-color: #f3f3f3;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     min-height: 224px; /* Мінімальна висота, щоб відповідати першому відгуку */
     text-align: left;
 }
 
 /* Налаштування зображення */
 .reviews-img {
-    height: 56px;
-    width: 56px;
+    height: 40px;
+    width: 40px;
     margin-bottom: 16px;
     border-radius: 50%; /* Кругле зображення */
     object-fit: cover;
-}
-
-/* Налаштування картки відгуку */
-.reviews-items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 20px;
-    padding: 24px;
-    max-width: 528px;
-    background-color: #f3f3f3;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-height: 224px;
 }
 
 /* Налаштування тексту відгуку */
@@ -75,14 +61,6 @@
     margin-top: auto; /* Щоб зображення і ім'я були внизу картки */
 }
 
-/* Налаштування зображення */
-.reviews-img {
-    width: 40px;
-    height: 40px;
-    margin-right: 16px; /* Відступ справа від зображення до імені */
-    border-radius: 50%; /* Округлення зображення */
-}
-
 /* Налаштування заголовку (ім'я) */
 .reviews-list-title {
     font-weight: 500;
@@ -91,25 +69,6 @@
     letter-spacing: -0.02em;
     color: #0c0c0c;
     margin: 0; /* Забираємо зайві відступи */
-}
-
-/* Налаштування заголовку та тексту відгуків */
-.reviews-list-title {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    margin-bottom: 8px;
-}
-
-.reviews-list-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.4;
-    color: rgba(12, 12, 12, 0.7);
-    margin-bottom: 16px;
-    text-align: left;
 }
 
 /* Налаштування Swiper */
@@ -144,7 +103,7 @@
 .swiper .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    margin: 0 !important;
+    margin: 0; /* Забрано !important */
     border-radius: 50%;
     border: none;
     opacity: 1;
@@ -167,7 +126,6 @@
     border-radius: 50%;
     position: absolute;
     bottom: 20px; /* Відступ від нижнього краю */
-    right: 20px;  /* Відступ від правого краю */
     z-index: 10;
 }
 
