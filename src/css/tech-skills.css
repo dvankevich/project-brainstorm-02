@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 .marquee {
   overflow: hidden;
   font-family: "Poppins", serif;
@@ -11,7 +7,7 @@ body {
   text-transform: uppercase;
   color: #292929;
   background-color: #BCDFD1;
-
+  padding: 20px 0;
 }
 
 .marquee__inner {
@@ -20,7 +16,7 @@ body {
 
 .marquee__line {
   flex-shrink: 0;
-  margin: 1;
+  margin: 0;
   padding: 5px 15px;
   min-width: 100%;
   white-space: nowrap;
@@ -32,17 +28,17 @@ body {
 
 .square {
   color: #5D6662;
-  font-size: 20px; 
-  margin: 0 35px; 
+  font-size: 20px;
+  margin: 0 35px;
   vertical-align: middle;
-  line-height: 5; 
+  line-height: 5;
   display: inline-block;
   width: 8px;
   height: 8px;
   padding: 0;
   opacity: 1;
-  background: #00B068; 
-  border-radius: 2px; 
+  background: #00B068;
+  border-radius: 2px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
@@ -50,18 +46,13 @@ body {
   from {
     transform: translateX(0);
   }
-  
+
   to {
     transform: translateX(-100%);
   }
 }
 
-/* Second line */
-
-
-body {
-  margin: 0;
-}
+/* Second */
 
 .marquee_class {
   overflow: hidden;
@@ -72,6 +63,7 @@ body {
   text-transform: uppercase;
   color: #00B068;
   background-color: #E4E5E6;
+  padding: 20px;
 
 }
 
@@ -79,19 +71,11 @@ body {
   display: flex;
 }
 
-.marquee__lined {
-  flex-shrink: 0;
-  margin: 1;
-  padding: 5px 15px;
-  min-width: 100%;
-  white-space: nowrap;
-  animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+.m_rotate {
+  transform: rotate(2deg);
 }
 
-.squared {
+.marquee__square {
   color: #5D6662;
   font-size: 20px;
   margin: 0 35px;
@@ -104,18 +88,8 @@ body {
   opacity: 1;
   background: #292929;
   border-radius: 2px;
- } 
-
-.rotated-text {
-transform: rotate(2deg);
-
 }
-@keyframes marqueeLine {
-  from {
-    transform: translateX(0);
-  }
-  
-  to {
-    transform: translateX(-100%);
-  }
+
+to {
+  transform: translateX(-100%);
 }
