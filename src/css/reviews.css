@@ -3,11 +3,11 @@
 }
 
 .reviews-title {
-    font-weight: 600;
-    font-size: 48px;
+    font-weight: 400;
+    font-size: 108px;
     line-height: 1;
     letter-spacing: -0.02em;
-    color: #0c0c0c;
+    color: #292929;
     margin-bottom: 40px;
     text-align: center; /* Центрування заголовка */
 }
