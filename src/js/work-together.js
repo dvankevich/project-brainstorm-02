@@ -1,22 +1,61 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('form');
-  const modal = document.getElementById('modal');
-  const closeModalBtn = document.querySelector('.modal-close-btn');
-  function openModal() {
-    modal.style.display = 'flex';
-  }
-  function closeModal() {
-    modal.style.display = 'none';
-  }
-  closeModalBtn.addEventListener('click', closeModal);
-  window.addEventListener('click', function (event) {
-    if (event.target === modal) {
-      closeModal();
+console.log('work-together');
+document
+  .getElementById('form')
+  .addEventListener('submit', async function (event) {
+    event.preventDefault();
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const modal = document.getElementById('modal');
+    const iconOk = document.querySelector('.icon-ok');
+    const sendButton = document.querySelector('.send-btn');
+
+    const formData = {
+      email: emailInput.value,
+      comment: messageInput.value,
+    };
+    sendButton.disabled = true;
+
+    try {
+      const response = await fetch(
+        'https://portfolio-js.b.goit.study/api/requests',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      if (!response.ok) {
+        const errorData = await response.json();
+        alert(`Error: ${errorData.message}`);
+        return;
+      }
+      modal.style.display = 'block';
+      emailInput.value = '';
+      messageInput.value = '';
+      iconOk.style.display = 'none';
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Your request failed. Please try again later');
+    } finally {
+      sendButton.disabled = false;
     }
   });
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    openModal();
-    form.reset();
+document
+  .querySelector('.modal-close-btn')
+  .addEventListener('click', function () {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
   });
+const emailInput = document.getElementById('email');
+const iconOk = document.querySelector('.icon-ok');
+const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
+emailInput.addEventListener('input', function () {
+  if (emailPattern.test(emailInput.value)) {
+    iconOk.style.display = 'block';
+  } else {
+    iconOk.style.display = 'none';
+  }
 });
