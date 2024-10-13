@@ -10,7 +10,7 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-dark);
   margin-bottom: 40px;
 }
 .tech-work-together {
@@ -22,7 +22,7 @@
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-dark);
   margin-bottom: 32px;
 }
 .list-work-together {
@@ -36,7 +36,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--text-dark);
 
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--text-dark);
   transition: color 0.3s ease;
 }
 .link-work-together:hover,
@@ -82,7 +82,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--text-dark);
   outline: none;
 }
 .contact-input:hover,
@@ -107,7 +107,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--text-dark);
   resize: none;
   margin-bottom: 32px;
   outline: none;
@@ -157,7 +157,7 @@
   transform: translate(-50%, -50%);
   width: 320px;
   height: 328px;
-  background-color: var(--white);
+  background-color: var(--mobile-menu-light);
   border: 1px solid var(--text);
   border-radius: 16px;
   padding: 48px 32px;
@@ -176,7 +176,7 @@
 }
 .modal-close-icon {
   stroke-width: 2px;
-  stroke: var(--black);
+  stroke: var(--text-dark);
 }
 .modal-title {
   font-weight: 400;
@@ -195,7 +195,7 @@
   line-height: 150%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--black);
+  color: var(--text-dark);
 }
 
 /* TABLET */
@@ -222,12 +222,20 @@
     flex-direction: row;
     gap: 0;
   }
-  .work-together {
-    background-image: url('/img/background-img/decor-bg-7tab-1x.webp') 1x,
-      url(../img/background-img/decor-bg-7tab-2x.webp) 2x;
+  .work-together-container {
+    position: relative;
+  }
+  .decor {
+    position: absolute;
+    top: -120px;
+    right: 30px;
+    width: 336px;
+    height: 260px;
+    background-image: -webkit-image-set(
+      url('../img/background-img/decor-bg-7tab-1x.webp') 1x,
+      url('../img/background-img/decor-bg-7tab-2x.webp') 2x
+    );
     background-repeat: no-repeat;
-    background-size: 336px 260px;
-    background-position: right top;
   }
   .send-btn {
     width: 173px;
@@ -242,11 +250,16 @@
 
 /* DESCTOP */
 @media screen and (min-width: 1280px) {
-  .work-together {
-    background-image: url('/img/background-img/decor-bg-3.webp');
+  .decor {
+    top: -120px;
+    right: 40px;
+    width: 526px;
+    height: 408px;
+    background-image: -webkit-image-set(
+      url('../img/background-img/decor-bg-3.webp') 1x,
+      url('../img/background-img/decor-bg-3-desk-2x.webp') 2x
+    );
     background-repeat: no-repeat;
-    background-size: 526px;
-    background-position: right top;
   }
   .title-work-together {
     width: 527px;

@@ -5,7 +5,7 @@
     line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--text-dark);
     width: 320px;
     margin-bottom: 40px;
 }
@@ -50,7 +50,7 @@
     line-height: 1.55;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--black) !important;
+    color: var(--text-dark) !important;
     display: block;
 }
 
@@ -60,14 +60,14 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: var(--black) !important;
+    color: var(--text-dark) !important;
 }
 
 .faq-icon-non-visible {
     display: inline-block;
     width: 32px;
     height: 32px;
-    color: var(--black) !important;
+    color: var(--text-dark) !important;
     fill: transparent;
 }
 
@@ -81,8 +81,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    stroke: var(--black) !important;
-    fill: var(--black) !important;
+    stroke: var(--text-dark) !important;
+    fill: var(--text-dark) !important;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
 }
