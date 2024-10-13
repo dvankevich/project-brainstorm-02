@@ -1,9 +1,7 @@
 import axios from "axios";
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
-// Описаний у документації
 import iziToast from "izitoast";
-// Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
 
 const listRevievsEl = document.querySelector('.js-reviews-wrapper');
@@ -53,7 +51,7 @@ function createMurkupListReviews(data) {
 // Функція для відображення повідомлення "Not found"
 function displayNotFoundMessage() {
   listRevievsEl.innerHTML = `<div class="reviev-not-found-wrapper">
-                              <p class="revievs-not-found">Not found</p></div>`; // Додаємо повідомлення
+                              <p class="revievs-not-found">Not found</p></div>`;
 }
 
 // Функція для відображення повідомлення iziToast
@@ -61,8 +59,8 @@ function displayErrorMessage(message) {
   iziToast.error({
     title: 'Error',
     message: message,
-    position: 'topRight', // Позиція повідомлення
-    timeout: 5000, // Час показу
+    position: 'topRight', 
+    timeout: 5000,
   });
 }
 
@@ -106,13 +104,13 @@ useReviews();
 // Налаштування Swiper
 const swiper = new Swiper('.swiper', {
   // Налаштування для кількості слайдів
-  slidesPerView: 1, // за замовчуванням - 1 слайд
-  spaceBetween: 32, // відстань між слайдами
+  slidesPerView: 1, 
+  spaceBetween: 32, 
 
-  // Налаштування для адаптивності
+
   breakpoints: {
     1280: {
-      slidesPerView: 2, // 2 слайди при ширині 1280 пікселів та більше
+      slidesPerView: 2,
     },
   },
 
@@ -120,10 +118,10 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.reviews-arrow-box-right',
     prevEl: '.reviews-arrow-box-left',
-    disabledClass: 'disabled', // клас для відключених кнопок
+    disabledClass: 'disabled',
   },
 
-  loop: false, // Вимкнено зациклення
+  loop: false,
 });
 
 // Функція для оновлення стану кнопок навігації
