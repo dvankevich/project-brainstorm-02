@@ -1,6 +1,10 @@
 import axios from "axios";
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
+// Описаний у документації
+import iziToast from "izitoast";
+// Додатковий імпорт стилів
+import "izitoast/dist/css/iziToast.min.css";
 
 const listRevievsEl = document.querySelector('.js-reviews-wrapper');
 
@@ -52,6 +56,35 @@ function displayNotFoundMessage() {
                               <p class="revievs-not-found">Not found</p></div>`; // Додаємо повідомлення
 }
 
+// Функція для відображення повідомлення iziToast
+function displayErrorMessage(message) {
+  iziToast.error({
+    title: 'Error',
+    message: message,
+    position: 'topRight', // Позиція повідомлення
+    timeout: 5000, // Час показу
+  });
+}
+
+// Функція для перевірки скролу до секції з відгуками
+function checkScrollToReviews() {
+  const options = {
+    root: null, // viewport
+    threshold: 0.1 // процент видимості для активації
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        displayErrorMessage('Error: Unable to fetch reviews'); // Відображаємо повідомлення про помилку
+        observer.unobserve(entry.target); // Зупиняємо спостереження після першого показу
+      }
+    });
+  }, options);
+
+  observer.observe(listRevievsEl); // Спостерігаємо за секцією
+}
+
 async function useReviews() {
   try {
     const reviews = await getReviews();
@@ -64,8 +97,10 @@ async function useReviews() {
   } catch (error) {
     console.error('Error using reviews:', error);
     displayNotFoundMessage(); // Відображення повідомлення при помилці
+    checkScrollToReviews(); // Перевірка скролу до секції
   }
 }
+
 useReviews();
 
 // Налаштування Swiper
