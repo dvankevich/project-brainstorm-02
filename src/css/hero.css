@@ -12,5 +12,107 @@
   color: #00b068;
 }
 .hero-section {
-  background-image: url(../img/hero\ 64.webp);
+  background: linear-gradient(to bottom, transparent 50%, #e4e5e6),
+    image-set(
+      url('../img/hero/hero64.webp') 1x,
+      url('../img/hero/hero64@2x.webp') 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-icon {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #00b068;
+}
+.hero-order-link {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: #292929;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 72px;
+  display: inline-block;
+}
+.hero-order-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  background-color: #bcdfd1;
+  z-index: -1;
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+}
+.hero-text {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+}
+.hero-text-span {
+  color: #00b068;
+}
+.hero-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 0px;
+}
+
+.hero-link {
+  text-decoration: none;
+  color: #292929;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .section {
+    padding: 62px 0;
+  }
+  .hero-section {
+    background: linear-gradient(to bottom, transparent 50%, #e4e5e6),
+      image-set(
+        url('../img/background-img/decor-bg-1tab.webp') 1x,
+        url('../img/background-img/decor-bg-1tab-2x.webp') 2x
+      );
+    background-position: center;
+  }
+  .hero-title {
+    max-width: 704px;
+    text-align: center;
+    font-size: 136px;
+  }
+  .hero-order-link {
+    font-size: 20px;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 80px;
+  }
+  .hero-list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .section {
+    padding: 82px 0;
+  }
 }

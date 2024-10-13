@@ -16,6 +16,14 @@
       fill: transparent;
     }
 
+    .icon-ok {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      stroke: green;
+      fill: green;
+    }
+
     .icon-order {
       display: inline-block;
       width: 30px;
@@ -28,6 +36,11 @@
 
 <body>
   <ul>
+    <li><svg class="icon-ok">
+        <use href="./img/sprite.svg#ok"></use>
+      </svg>
+      ok
+    </li>
     <li><svg class="icon">
         <use href="./img/sprite.svg#burger"></use>
       </svg>

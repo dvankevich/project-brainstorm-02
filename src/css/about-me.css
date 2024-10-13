@@ -1,6 +1,6 @@
-@media (max-width: 360px) {
+@media screen and (min-width: 320px) {
   .aboutme-title {
-    font-family: 'Impact', sans-serif;
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 52px;
     line-height: 1.23077;
@@ -8,18 +8,18 @@
     text-transform: uppercase;
     text-align: start;
     margin-bottom: 40px;
+    color: var(--black);
   }
   .aboutme-title > span {
-    color: #00b068;
+    color: var(--accet-green);
   }
   .aboutme-img-container {
-    margin-bottom: 40px;
   }
   .aboutme-img {
     display: block;
     border-radius: 16px;
     width: 320px;
-    height: 374px;
+    margin-bottom: 40px;
   }
   .aboutme-bio-container {
     width: 320px;
@@ -27,33 +27,34 @@
   }
 
   .aboutme-bio-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #292929;
+    color: var(--black);
     margin-bottom: 32px;
   }
 
   .aboutme-bio-text {
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: #292929;
+    color: var(--black);
     margin-bottom: 24px;
   }
+
+  .edc-role-container {
+    margin-bottom: 80px;
+  }
   .edc-role-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #292929;
+    color: var(--black);
     margin-bottom: 32px;
   }
 
@@ -61,16 +62,26 @@
     margin-bottom: 40px;
   }
   .edc-role-item {
-    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: #292929;
+    color: var(--black);
+  }
+  .edc-role-item::before {
+    content: '';
+    display: inline-block;
+    background: var(--accet-green);
+    transform: rotate(-180deg);
+    border-radius: 1px;
+    width: 4px;
+    height: 4px;
+    margin-right: 14px;
+    vertical-align: middle;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .aboutme-title {
     font-size: 108px;
     line-height: 1.14815;
@@ -78,17 +89,25 @@
   }
 
   .img-bio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
     position: relative;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-image: url(/img/background-img/decor-bg-2.webp);
+    background-repeat: no-repeat;
+    background-size: 336px 252px;
+    background-position: right bottom;
   }
 
   .aboutme-bio-container {
-    flex: 1;
-    width: 488px;
-    height: 488px;
+    display: flex;
+    flex-direction: column;
+    width: 336px;
   }
   .aboutme-bio-title {
     font-size: 36px;
@@ -102,8 +121,8 @@
   }
   .aboutme-img {
     width: 336px;
-    height: 392px;
     margin-bottom: 60px;
+    padding-top: 408px;
   }
   .edc-role-container {
     width: 704px;
@@ -111,6 +130,7 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
+    margin-bottom: 124px;
   }
   .edc-role-title {
     font-size: 36px;
@@ -126,16 +146,28 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
+  .aboutme-bio-container {
+    flex: none;
+    width: 488px;
+  }
+
+  .img-bio-container {
+    background-size: 394px 297px;
+  }
+
   .aboutme-img-container {
     margin-left: 208px;
     margin-bottom: 80px;
   }
   .aboutme-img {
     width: 384px;
-    height: 448px;
+    padding-top: 312px;
   }
   .edc-role-container {
+    margin-bottom: 164px;
+    display: flex;
+    flex-direction: row;
     width: 904px;
     height: 280px;
     gap: 136px;
