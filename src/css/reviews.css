@@ -3,7 +3,7 @@
 }
 
 .reviews-title {
-    font-weight: 400;
+    font-weight: 800;
     font-size: 108px;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -202,4 +202,24 @@
 
 .hidden {
     display: none;
+}
+
+/* стрілки */
+.swiper-button-next::before,
+.swiper-button-prev::before {
+    content: ''; /* Очищаємо контент псевдоелементів */
+    display: inline-block;
+    width: 10px; /* Ширина стрілки */
+    height: 10px; /* Висота стрілки */
+    border-top: 2px solid #0c0c0c; /* Верхня лінія стрілки */
+    border-right: 2px solid #0c0c0c; /* Права лінія стрілки */
+    transform: rotate(45deg); /* Нахил для створення стрілки */
+}
+
+.swiper-button-prev::before {
+    transform: rotate(-135deg); /* Нахил для створення стрілки вліво */
+}
+
+.swiper-button-next::before {
+    transform: rotate(45deg); /* Нахил для створення стрілки вправо */
 }
