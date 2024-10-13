@@ -1,5 +1,19 @@
+.reviev-not-found-wrapper{
+    margin: 0 auto; 
+    border: 1px solid #b4b3b3;
+    border-radius: 8px;
+    padding: 16px;
+}
 
 
+.revievs-not-found{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    color: rgb(253, 35, 35);
+}
 
 
 .reviews-title {
@@ -123,6 +137,21 @@
     .swiper-slide {
     min-height: 235px !important;
 }
+
+.reviev-not-found-wrapper {
+    border-radius: 16px;
+    padding: 32px;
+}
+
+
+.revievs-not-found {
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+
+}
+
+
 
 }
 

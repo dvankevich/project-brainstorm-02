@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 const listRevievsEl = document.querySelector('.js-reviews-wrapper');
 
 async function getReviews() {
-  const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews';
+  const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviewsі';
 
   try {
     const response = await axios.get(BASE_URL, {
@@ -46,17 +46,27 @@ function createMurkupListReviews(data) {
   return murkupReviews;
 }
 
+// Функція для відображення повідомлення "Not found"
+function displayNotFoundMessage() {
+  listRevievsEl.innerHTML = `<div class="reviev-not-found-wrapper">
+                              <p class="revievs-not-found">Not found</p></div>`; // Додаємо повідомлення
+}
+
 async function useReviews() {
   try {
     const reviews = await getReviews();
-    listRevievsEl.insertAdjacentHTML('afterbegin', createMurkupListReviews(reviews));
+    
+    if (reviews.length === 0) { // Перевірка на порожній масив
+      displayNotFoundMessage(); // Відображення повідомлення, якщо немає відгуків
+    } else {
+      listRevievsEl.insertAdjacentHTML('afterbegin', createMurkupListReviews(reviews));
+    }
   } catch (error) {
     console.error('Error using reviews:', error);
+    displayNotFoundMessage(); // Відображення повідомлення при помилці
   }
 }
 useReviews();
-
-
 
 // Налаштування Swiper
 const swiper = new Swiper('.swiper', {
@@ -97,16 +107,12 @@ function updateNavigation() {
   }
 }
 
-
 swiper.on('slideChange', updateNavigation);
-
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'ArrowLeft') {
-    
     swiper.slidePrev();
   } else if (event.key === 'ArrowRight') {
-  
     swiper.slideNext();
   }
 });
