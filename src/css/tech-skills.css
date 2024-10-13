@@ -63,7 +63,7 @@
   text-transform: uppercase;
   color: #00B068;
   background-color: #E4E5E6;
-  padding: 20px;
+  padding: 10px;
 
 }
 
@@ -80,7 +80,6 @@
   font-size: 20px;
   margin: 0 35px;
   vertical-align: middle;
-  line-height: 1;
   display: inline-block;
   width: 8px;
   height: 8px;
