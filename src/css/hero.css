@@ -112,10 +112,6 @@ only screen and (min-resolution: 192dpi) {
   gap: 24px;
 }
 
-.hero-list-item {
-
-}
-
 .hero-link {
   font-family: var(--font-family);
   font-weight: 300;
