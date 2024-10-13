@@ -7,7 +7,7 @@
   text-transform: uppercase;
   color: #292929;
   background-color: #BCDFD1;
-
+  padding: 20px 0;
 }
 
 .marquee__inner {
@@ -16,7 +16,7 @@
 
 .marquee__line {
   flex-shrink: 0;
-  margin: 1;
+  margin: 0;
   padding: 5px 15px;
   min-width: 100%;
   white-space: nowrap;
@@ -42,6 +42,16 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /* Second */
 
 .marquee_class {
@@ -53,6 +63,7 @@
   text-transform: uppercase;
   color: #00B068;
   background-color: #E4E5E6;
+  padding: 20px;
 
 }
 
@@ -62,8 +73,6 @@
 
 .m_rotate {
   transform: rotate(2deg);
-  margin-top: 5px;
-  padding-top: 5px;
 }
 
 .marquee__square {
