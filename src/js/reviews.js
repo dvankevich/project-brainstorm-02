@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 const listRevievsEl = document.querySelector('.js-reviews-wrapper');
 
 async function getReviews() {
-  const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviewsі';
+  const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews';
 
   try {
     const response = await axios.get(BASE_URL, {
