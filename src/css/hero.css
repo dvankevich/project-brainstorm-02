@@ -1,118 +1,141 @@
+.hero-title-img{
+  display: none;
+}
+
+.hero-section {
+  padding-top: 112px;
+  padding-bottom: 40px;
+
+background-image: url('/img/background-img/decor-bg-1mob.webp');
+  /* Звичайне зображення */
+  background-size: contain;
+  /* Адаптація зображення по розміру */
+  background-position: center;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url('/img/background-img/decor-bg-1mob-2x.webp');
+    /* Зображення для Retina */
+  }
+}
+
+
+.hero-container {
+
+}
+
+.hero-wrapper-top {
+
+}
+
 .hero-title {
+  font-family: var(--second-family);
   font-weight: 400;
   font-size: 64px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
-  font-family: 'Impact', sans-serif;
-  margin-bottom: 40px;
-}
-.hero-title-span {
-  color: #00b068;
-}
-.hero-section {
-  background: linear-gradient(to bottom, transparent 50%, #e4e5e6),
-    image-set(
-      url('../img/hero/hero64.webp') 1x,
-      url('../img/hero/hero64@2x.webp') 2x
-    );
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  color: var(--black);
+  margin-bottom: 72px;
 }
 
-.hero-icon {
-  fill: none;
-  stroke-width: 2px;
-  stroke: #00b068;
+.hero-title-img {
+
 }
-.hero-order-link {
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  color: #292929;
-  position: relative;
-  z-index: 1;
+
+.hero-image {
+
+}
+
+.hero-title-span {
+  color: var(--accet-green);
+}
+
+.hero-wrapper-down {
   margin-bottom: 72px;
-  display: inline-block;
 }
-.hero-order-link::before {
-  content: '';
+
+.wrapper-order {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 72px;
+}
+
+.hero-arrow {
+  fill: var(--accet-green);
+}
+
+.hero-order-text {
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.wrapper-order::after{
   position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translateY(-50%);
-  background-color: #bcdfd1;
+  content: '';
   z-index: -1;
   border-radius: 16px;
   width: 165px;
   height: 92px;
+  background: var(--light-accent);
+  transform: translate(92%, 0);
 }
-.hero-text {
-  font-family: 'Poppins', sans-serif;
+
+.hero-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 72px;
+
 }
-.hero-text-span {
-  color: #00b068;
+
+.hero-descr-span {
+  color: var(--accet-green);
 }
+
+.hero-wrapper-container-list{
+  background: var(--light-grey);
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  width: 100vw;
+  /* Ширина на всю ширину вікна браузера */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .hero-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
-  padding: 32px 0px;
+}
+
+.hero-list-item {
+
 }
 
 .hero-link {
-  text-decoration: none;
-  color: #292929;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
-  .section {
-    padding: 62px 0;
-  }
-  .hero-section {
-    background: linear-gradient(to bottom, transparent 50%, #e4e5e6),
-      image-set(
-        url('../img/background-img/decor-bg-1tab.webp') 1x,
-        url('../img/background-img/decor-bg-1tab-2x.webp') 2x
-      );
-    background-position: center;
-  }
-  .hero-title {
-    max-width: 704px;
-    text-align: center;
-    font-size: 136px;
-  }
-  .hero-order-link {
-    font-size: 20px;
-  }
-  .hero-text {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 80px;
-  }
-  .hero-list {
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
-  .section {
-    padding: 82px 0;
-  }
+.hero-link:hover,.hero-link:focus {
+    color: var(--accet-green);
 }
