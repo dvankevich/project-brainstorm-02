@@ -2,34 +2,36 @@
   display: none;
 }
 
+
+
+
+
+
 .hero-section {
   padding-top: 112px;
   padding-bottom: 40px;
 
-background-image: url('/img/background-img/decor-bg-1mob.webp');
-  /* Звичайне зображення */
-  background-size: contain;
-  /* Адаптація зображення по розміру */
-  background-position: center;
-}
 
+}
+.hero-container{
+  background-image: url('/img/hero/decor-mobi-top.webp'), url('/img/hero/decor-mobi-bottom.webp');
+    background-size: 85%, 70%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 30px 30px, right 450px;
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: url('/img/background-img/decor-bg-1mob-2x.webp');
-    /* Зображення для Retina */
+  .hero-container {
+    background-image: url('/img/hero/decor-mobi-top@2x.webp'), url('/img/hero/decor-mobi-bottom@2x.webp');
+      background-size: 85%, 70%;
+      background-repeat: no-repeat, no-repeat;
+      background-position: 30px 30px, right 450px;
   }
 }
 
 
-.hero-container {
 
-}
-
-.hero-wrapper-top {
-
-}
 
 .hero-title {
   font-family: var(--second-family);
@@ -139,3 +141,116 @@ only screen and (min-resolution: 192dpi) {
 .hero-link:hover,.hero-link:focus {
     color: var(--accet-green);
 }
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+
+  .hero-section {
+      padding-top: 88px;
+      padding-bottom: 62px;
+
+    }
+        .hero-container{
+  background-image: url('/img/background-img/decor-bg-1tab.webp');
+    background-repeat: no-repeat;
+    /* Звичайне зображення */
+    background-size: 100%;
+    /* Адаптація зображення по розміру */
+    background-position: top right;
+        }
+  
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
+      .hero-container {
+        background-image: url('/img/background-img/decor-bg-1tab-2x.webp');
+        /* Зображення для Retina */
+      }
+    }
+
+
+  .hero-title{
+    font-size: 136px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-order-text{
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+
+  .wrapper-order::after {
+      width: 261px;
+      height: 96px;
+      transform: translate(58%, 0);
+    }
+
+    .hero-descr{
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .hero-list{
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+
+  .hero-title-img {
+      display: inline-block;
+
+    }
+    .hero-image{
+    width: 108px;
+    height: 108px;
+
+
+    }
+
+  .hero-section {
+      padding-top: 112px;
+      padding-bottom: 40px;
+  
+
+    }
+  
+    .hero-container{
+            background-image: url('/img/background-img/decor-bg-1mob.webp');
+              background-repeat: no-repeat;
+              /* Звичайне зображення */
+              background-size: contain;
+              /* Адаптація зображення по розміру */
+              background-position: top;
+    }
+
+  
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi) {
+      .hero-container {
+        background-image: url('/img/background-img/decor-bg-1mob-2x.webp');
+        /* Зображення для Retina */
+      }
+    }
+
+  .hero-wrapper-down{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 76px;
+  }
+
+  .hero-descr-wrapper{
+    width: 592px;
+  }
+
+    .wrapper-order{
+      margin-bottom: 0;
+    }
+
+
+  }
