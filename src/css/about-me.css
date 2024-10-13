@@ -46,7 +46,6 @@
   }
 
   .edc-role-container {
-    margin-bottom: 80px;
   }
   .edc-role-title {
     font-weight: 500;
@@ -90,7 +89,7 @@
 
   .img-bio-container {
     display: flex;
-    justify-content: space-between;
+    gap: 32px;
     position: relative;
     width: 100%;
     flex-wrap: nowrap;
@@ -103,8 +102,9 @@
 
   .aboutme-bio-container {
     display: flex;
+
     flex-direction: column;
-    width: 336px;
+    max-width: 336px;
   }
   .aboutme-bio-title {
     font-size: 36px;
@@ -127,7 +127,6 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
-    margin-bottom: 124px;
   }
   .edc-role-title {
     font-size: 36px;
@@ -146,28 +145,29 @@
 @media screen and (min-width: 1280px) {
   .aboutme-bio-container {
     flex: none;
-    width: 488px;
+    max-width: 488px;
   }
 
   .img-bio-container {
+    display: flex;
     background-size: 394px 297px;
+    gap: 136px;
   }
 
   .aboutme-img-container {
-    margin-left: 208px;
+    padding-left: 208px;
   }
   .aboutme-img {
     width: 384px;
     padding-top: 312px;
   }
   .edc-role-container {
-    margin-bottom: 164px;
     display: flex;
     flex-direction: row;
     width: 904px;
     height: 280px;
     gap: 136px;
-    margin-left: 208px;
+    padding: 0 208px;
   }
 
   .edc-role-list {
