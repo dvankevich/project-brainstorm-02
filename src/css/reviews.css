@@ -1,0 +1,140 @@
+
+
+
+
+.reviews-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+
+.reviews-wrapper-cart {
+    background-color: var(--light-grey);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.reviews-descr {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    margin-bottom: 24px;
+}
+
+.reviews-autor-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.reviews-autor-photo {
+
+}
+
+.reviews-autor-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+.reviews-arrows {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
+.reviews-arrow-box-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.reviews-arrow-box-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.reviews-arrow-left {
+    stroke-width: 2px;
+    stroke: var(--black);
+}
+
+.reviews-arrow-right {
+    stroke-width: 2px;
+    stroke: var(--black);
+}
+
+.reviews-arrow-box-left:disabled {
+    border: 1px solid var(--light-grey);
+}
+
+.reviews-arrow-box-left:disabled svg {
+    stroke: var(--light-grey);
+}
+
+.reviews-arrow-box-right:disabled {
+    border: 1px solid var(--light-grey);
+}
+
+.reviews-arrow-box-right:disabled svg {
+    stroke: var(--light-grey);
+}
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .reviews-title{
+    font-size: 108px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 60px;
+    }
+
+
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+
+  .reviews-title{
+    margin-bottom: 80px;
+  }
+
+    .reviews-arrow-box-left{
+      width: 48px;
+      height: 48px;
+    }
+
+    .reviews-arrow-box-right{
+      width: 48px;
+      height: 48px;
+    }
+
+  .reviews-wrapper{
+    display: flex;
+  }
+}
