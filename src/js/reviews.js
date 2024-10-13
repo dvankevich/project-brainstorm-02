@@ -1,3 +1,7 @@
+// import Swiper JS
+import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css';
 // Підключаємо Swiper
 const swiper = new Swiper('.swiper', {
     loop: false, // Відключає зациклення слайдів
@@ -107,3 +111,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Викликаємо функцію отримання відгуків при завантаженні сторінки
     fetchReviews();
 });
+
