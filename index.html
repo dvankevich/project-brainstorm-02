@@ -14,7 +14,7 @@
   <script type="module" crossorigin src="/project-brainstorm-02/index.js"></script>
   <link rel="modulepreload" crossorigin href="/project-brainstorm-02/assets/vendor-CTqzIL4Y.js">
   <link rel="stylesheet" crossorigin href="/project-brainstorm-02/assets/vendor-CzG10Eoq.css">
-  <link rel="stylesheet" crossorigin href="/project-brainstorm-02/assets/styles-DY_uFojw.css">
+  <link rel="stylesheet" crossorigin href="/project-brainstorm-02/assets/styles-vqbEf1uS.css">
 </head>
 
 <body>
@@ -552,23 +552,32 @@
       <h2 class="reviews-title">Reviews</h2>
       <div class="swiper">
         <ul class="reviews-list swiper-wrapper">
-          <li class="swiper-slide one">
-            <div class="reviews-items">
-              <img
-                srcset="/src/img/reviews/natali.webp 1x, /src/img/reviews/natali.webp 2x"
-                class="reviews-img"
-                src="/src/img/reviews/natali.webp"
-                width="40"
-                height="40"
-                alt="Natalia Shevchenko"
-              />
-              <p>Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were completed on time and the result exceeded my expectations</p>
-              <h3 class="reviews-list-title">Natalia Shevchenko</h3>
-            </div>
-          </li>
+            <li class="swiper-slide one">
+                <div class="reviews-items">
+                  <p class="reviews-list-text">
+                    Work with was extraordinary! He turned out to be a very competent and responsible specialist. 
+                    The projects were completed on time and the result exceeded my expectations.
+                  </p>
+                  <div class="reviews-footer">
+                    <img
+                      srcset="/src/img/reviews/natali.webp 1x, /src/img/reviews/natali.webp 2x"
+                      class="reviews-img"
+                      src="/src/img/reviews/natali.webp"
+                      width="40"
+                      height="40"
+                      alt="Natalia Shevchenko"
+                    />
+                    <h3 class="reviews-list-title">Natalia Shevchenko</h3>
+                  </div>
+                </div>
+              </li>
           <li class="swiper-slide two">
             <div class="reviews-items">
-              <img
+              <p class="reviews-list-text"> I have the honor to recommend him as an exceptional professional in his field. His knowledge and expertise are undeniable. 
+                Cooperation with him always brings impressive results.
+              </p>
+              <div class="reviews-footer">
+                <img
                 srcset="/src/img/reviews/dmytro.webp 1x, /src/img/reviews/dmytro.webp 2x"
                 class="reviews-img"
                 src="/src/img/reviews/dmytro.webp"
@@ -576,10 +585,8 @@
                 height="40"
                 alt="Dmytro Nazarenko"
               />
-              <p class="reviews-list-text">
-                <p>I have the honor to recommend him as an exceptional professional in his field. His knowledge and expertise are undeniable. Cooperation with him always brings impressive results.</p>
-              </p>
               <h3 class="reviews-list-title">Dmytro Nazarenko</h3>
+            </div>
             </div>
           </li>
         </ul>
@@ -588,6 +595,8 @@
         <div class="swiper-button-next"></div>
       </div>
     </div>
+    <!-- Повідомлення про помилку -->
+<div id="error-popup" class="error-popup hidden">Error fetching reviews. Please try again later.</div>
 </section>
     <section class="work-together section" id="work-together">
   <div class="work-together-container container">
