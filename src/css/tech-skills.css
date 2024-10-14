@@ -1,14 +1,6 @@
-
-
 .marquee,
 .marquee_class {
   overflow: hidden;
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 48px;
-  text-transform: uppercase;
-  padding: 20px 0;
 }
 
 .marquee {
@@ -38,22 +30,22 @@
 .marquee__inner,
 .marquee__inner__2 {
   display: flex;
+  padding: 32px;
 }
 
 .marquee__line {
   flex-shrink: 0;
   margin: 0;
-  padding: 5px 15px;
   min-width: 200%;
-
   white-space: nowrap;
-  animation-name: marqueeLine;
-  animation-duration: 15s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  animation: marqueeLine 15s linear infinite;
 }
-
 
 .marquee__square__2 {
   font-size: 20px;
@@ -69,7 +61,6 @@
 .marquee__square__2.dark {
   background: var(--accet-green-dt);
 }
-
 
 .marquee__square {
   font-size: 20px;
@@ -87,12 +78,28 @@
 }
 
 @keyframes marqueeLine {
-  from {
+  0% {
     transform: translateX(0%);
   }
 
-  to {
+  100% {
     transform: translateX(-50%);
-    
+  }
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+
+.marquee__inner,
+  .marquee__inner__2 {
+    padding: 40px;
+  }
+
+  .marquee__line{
+      font-size: 36px;
+      line-height: 1.33;
+      letter-spacing: 0.01em;
+
   }
 }
