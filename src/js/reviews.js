@@ -7,7 +7,7 @@ import "izitoast/dist/css/iziToast.min.css";
 const listRevievsEl = document.querySelector('.js-reviews-wrapper');
 
 async function getReviews() {
-  const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews';
+  const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews'; // Спеціально некоректний URL для тестування
 
   try {
     const response = await axios.get(BASE_URL, {
@@ -19,8 +19,11 @@ async function getReviews() {
     return response.data;
 
   } catch (error) {
-    console.error('Error fetching data:', error);
-    throw error;
+    const errorMessage = error.response
+      ? `Error ${error.response.status}: ${error.response.statusText}`
+      : 'Network error or server unavailable';
+    checkScrollToReviews(errorMessage);
+    throw error; // Пробрасываем ошибку для дальнейшей обработки
   }
 }
 
@@ -57,15 +60,15 @@ function displayNotFoundMessage() {
 // Функція для відображення повідомлення iziToast
 function displayErrorMessage(message) {
   iziToast.error({
-    title: 'Error',
-    message: message,
+    title: '', // Залишаємо титул порожнім
+    message: message, // Точне повідомлення про помилку
     position: 'topRight', 
     timeout: 5000,
   });
 }
 
 // Функція для перевірки скролу до секції з відгуками
-function checkScrollToReviews() {
+function checkScrollToReviews(errorMessage) {
   const options = {
     root: null, // viewport
     threshold: 0.1 // процент видимості для активації
@@ -74,7 +77,7 @@ function checkScrollToReviews() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        displayErrorMessage('Error: Unable to fetch reviews'); // Відображаємо повідомлення про помилку
+        displayErrorMessage(errorMessage); // Відображаємо повідомлення про помилку
         observer.unobserve(entry.target); // Зупиняємо спостереження після першого показу
       }
     });
@@ -95,7 +98,6 @@ async function useReviews() {
   } catch (error) {
     console.error('Error using reviews:', error);
     displayNotFoundMessage(); // Відображення повідомлення при помилці
-    checkScrollToReviews(); // Перевірка скролу до секції
   }
 }
 
@@ -103,10 +105,8 @@ useReviews();
 
 // Налаштування Swiper
 const swiper = new Swiper('.swiper', {
-  // Налаштування для кількості слайдів
-  slidesPerView: 1, 
-  spaceBetween: 32, 
-
+  slidesPerView: 1,
+  spaceBetween: 32,
 
   breakpoints: {
     1280: {
@@ -114,7 +114,6 @@ const swiper = new Swiper('.swiper', {
     },
   },
 
-  // Кнопки навігації
   navigation: {
     nextEl: '.reviews-arrow-box-right',
     prevEl: '.reviews-arrow-box-left',
@@ -130,7 +129,6 @@ function updateNavigation() {
   const currentIndex = swiper.activeIndex;
   const viewportWidth = window.innerWidth;
 
-  // Увімкнення/вимкнення кнопок навігації
   swiper.navigation.prevEl.disabled = currentIndex === 0;
 
   if (viewportWidth >= 1280) {
