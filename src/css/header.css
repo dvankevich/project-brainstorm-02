@@ -23,9 +23,9 @@ body.dark {
     --background: var(--bg-dark);
     --text-color: var(--text-light);
     --text-dark: var(--text-light);
-    --mobile-menu-light: #1e2023;
-    --light-grey:#2a2d32;
-    --light-accent: #204136;
+    --mobile-menu-light: var(--black-dt);
+    --light-grey: var(--charcoal-dt);
+    --light-accent: var(--dark-accet-dt);
 }
 
 body.light {
@@ -142,7 +142,6 @@ body.light {
     -webkit-transform: translateX(25px);
     -ms-transform: translateX(25px);
     transform: translateX(25px);
-    /* background: url('../images/ellipse-dark.svg'); */
     width: 20px;
     height: 20px;
     top: 2px;
@@ -174,7 +173,6 @@ body.light {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 16px 20px;
 }
 
@@ -185,7 +183,6 @@ body.light {
     line-height: 1;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* color: var(--black); */
     color: var(--text-dark);
 }
 
@@ -223,18 +220,6 @@ body.light {
     color: var(--accet-green);
 }
 
-/* .header-link{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .header-link:hover, .header-link:focus{
-    color: var(--accet-green);
-} */
 
 @media screen and (min-width: 768px) {
     .header {

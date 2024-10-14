@@ -4,7 +4,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-dark);
   font-family: 'Impact', sans-serif;
   margin-bottom: 40px;
 }
@@ -31,7 +31,7 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--text-dark);
   position: relative;
   z-index: 1;
   margin-bottom: 72px;
@@ -43,7 +43,7 @@
   top: 50%;
   left: 60%;
   transform: translateY(-50%);
-  background-color: #bcdfd1;
+  background-color: var(--light-accent);
   z-index: -1;
   border-radius: 16px;
   width: 165px;
@@ -78,7 +78,7 @@
 
 .hero-link {
   text-decoration: none;
-  color: #292929;
+  color: var(--text-dark);
   font-family: 'Poppins', sans-serif;
 }
 
