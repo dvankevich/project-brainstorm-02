@@ -83,6 +83,7 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    background-color: inherit;
 }
 
 .reviews-arrow-box-right {
@@ -94,6 +95,7 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    background-color: inherit;
 }
 
 .reviews-arrow-left {
