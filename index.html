@@ -14,17 +14,19 @@
   <script type="module" crossorigin src="/project-brainstorm-02/index.js"></script>
   <link rel="modulepreload" crossorigin href="/project-brainstorm-02/assets/vendor-C6HZcDrf.js">
   <link rel="stylesheet" crossorigin href="/project-brainstorm-02/assets/vendor-Cvhwh8Pc.css">
-  <link rel="stylesheet" crossorigin href="/project-brainstorm-02/assets/styles-CqOAzrIU.css">
+  <link rel="stylesheet" crossorigin href="/project-brainstorm-02/assets/styles-CJG6GpUF.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="top">
   <div class="header-section container" id="header">
-    <a class="header-logo" href="#top">Lloyd<span class="header-logo-tech">Jefferson.</span></a>
+    <a class="header-logo" href="/index.html"
+      >Lloyd<span class="header-logo-tech">Jefferson.</span></a
+    >
 
     <div class="icon-conrainer">
       <div class="switch_container">
-        <input type="checkbox" id="switch">
+        <input type="checkbox" id="switch" />
         <label for="switch" class="label">
           <i class="fa-solid fa-sun"></i>
           <i class="fa-solid fa-moon"></i>
@@ -46,12 +48,16 @@
       </ul>
     </nav>
 
-    <button class="header-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+    <button
+      class="header-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="header-btn-icon" width="32" height="32">
         <use href="/project-brainstorm-02/assets/sprite-1qIG74qR.svg#burger"></use>
       </svg>
     </button>
-
   </div>
 </header>
 
@@ -60,7 +66,9 @@
 <div class="header-mobile-menu-container js-menu-container" id="mobile-menu">
   <div class="header-mobile-menu">
     <div class="header-logo-container">
-      <a class="header-mobile-logo" href="#top">Lloyd<span class="header-mobile-logo-tech">Jefferson.</span></a>
+      <a class="header-mobile-logo" href="#top"
+        >Lloyd<span class="header-mobile-logo-tech">Jefferson.</span></a
+      >
     </div>
     <button class="header-mobile-menu-close js-close-menu">
       <svg width="32" height="32" class="header-mobile-menu-close-icon">
@@ -83,6 +91,7 @@
     </nav>
   </div>
 </div>
+
   <main>
     <!-- Loads the specified .html file -->
     <section class="hero-section container" id="hero">
@@ -698,7 +707,7 @@
   <footer class="footer-section" id="footer">
   <div class="container footer-cont">
     <div class="footer-wrapper">
-      <a href="./index.html" class="footer-logo"
+      <a href="#top" class="footer-logo"
         >Lloyd<span class="footer-logo-span">Jefferson.</span></a
       >
       <ul class="footer-list">
