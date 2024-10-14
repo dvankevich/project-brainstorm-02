@@ -52,6 +52,9 @@
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   margin-bottom: 72px;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 .hero-text-span {
   color: #00b068;
@@ -99,6 +102,7 @@
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 80px;
+    letter-spacing: 0.03em;
   }
   .hero-list {
     flex-direction: row;
