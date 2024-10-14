@@ -23,7 +23,7 @@
     line-height: 1.23;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--text-dark);
     text-align: center;
     margin-bottom: 40px;
 
@@ -78,7 +78,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--black);
+    border: 1px solid var(--text-dark);
     border-radius: 8px;
     width: 40px;
     height: 40px;
@@ -89,7 +89,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--black);
+    border: 1px solid var(--text-dark);
     border-radius: 8px;
     width: 40px;
     height: 40px;
@@ -98,12 +98,12 @@
 
 .reviews-arrow-left {
     stroke-width: 2px;
-    stroke: var(--black);
+    stroke: var(--text-dark);
 }
 
 .reviews-arrow-right {
     stroke-width: 2px;
-    stroke: var(--black);
+    stroke: var(--text-dark);
 }
 
 .reviews-arrow-box-left:disabled {
