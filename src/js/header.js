@@ -109,6 +109,16 @@ const setDarkMode = () => {
 };
 const setLightMode = () => {
   body.classList = 'light';
+
+  marquee.classList.remove('dark');
+  marqueeClass.classList.remove('dark');
+  marqueeSquare.forEach(item => {
+    item.classList.remove('dark');
+  });
+  marqueeSquare2.forEach(item => {
+    item.classList.remove('dark');
+  });
+  localStorage.setItem('theme', 'dark');
   localStorage.setItem('theme', 'light');
 
   checkbox.checked = false;

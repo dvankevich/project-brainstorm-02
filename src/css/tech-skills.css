@@ -17,12 +17,12 @@
 
 .marquee__inner {
   display: flex;
-  padding-left: 160px;
+  /* padding-left: 160px; */
 }
 
 .marquee__inner__2 {
   display: flex;
-  padding-right: 160px;
+  /* padding-right: 160px; */
 }
 
 
