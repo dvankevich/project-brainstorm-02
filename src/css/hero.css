@@ -7,7 +7,9 @@
   color: var(--text-dark);
   font-family: 'Impact', sans-serif;
   margin-bottom: 40px;
+  padding-top: 96px;
 }
+
 .hero-title-span {
   color: #00b068;
 }
@@ -81,6 +83,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.hero-svg-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .hero-wrapper {
     background-image: url(../img/background-img/decor-bg-1tab.webp);
@@ -91,6 +99,8 @@
     max-width: 704px;
     text-align: center;
     font-size: 136px;
+    padding-bottom: 72px;
+    font-size: 124px;
   }
   .hero-order-link {
     font-size: 20px;
