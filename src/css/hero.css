@@ -12,10 +12,9 @@
   color: #00b068;
 }
 .hero-wrapper {
-  background-image: url(./img/hero/mobTop-min.png),
-    url(./img/hero/mobBottom-min.png);
-  background-size: cover, contain;
-  background-position: right center, bottom center;
+  background-image: url(../img/background-img/decor-bg-1mob.webp);
+  background-size: 351px 469px;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 .hero-dev-img {
@@ -84,9 +83,9 @@
 
 @media screen and (min-width: 768px) {
   .hero-wrapper {
-    background-image: url(../img/hero/decorTabletTop-min.png),
-      url(../img/hero/decorTabBottom-min.png);
-    background-position: right, bottom center;
+    background-image: url(../img/background-img/decor-bg-1tab.webp);
+    background-size: 356px 708px;
+    background-position: top right;
   }
   .hero-title {
     max-width: 704px;
@@ -116,9 +115,9 @@
 
 @media screen and (min-width: 1280px) {
   .hero-wrapper {
-    background-image: url(../img/hero/decorDescTop-min.png),
-      url(../img/hero/decorDescBottom-min.png);
-    background-position: right, bottom center;
+    background-image: url(../img/background-img/decor-bg-1desc.webp);
+    background-size: 1216px 743px;
+    background-position: left bottom;
   }
   .hero-dev-img {
     display: inline;
