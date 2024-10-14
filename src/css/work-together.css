@@ -89,6 +89,11 @@
 .contact-input:focus {
   box-shadow: 1px 1px 3px rgb(169, 169, 169);
 }
+.contact-input::placeholder{
+color: var(--text-dark);
+}
+
+
 .icon-ok {
   position: absolute;
   right: 17px;
@@ -115,6 +120,10 @@
 .contact-text:hover,
 .contact-text:focus {
   box-shadow: 1px 1px 3px rgb(169, 169, 169);
+}
+
+.contact-text::placeholder{
+color: var(--text-dark);
 }
 
 .send-btn {
