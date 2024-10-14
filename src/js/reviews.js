@@ -7,7 +7,7 @@ import "izitoast/dist/css/iziToast.min.css";
 const listRevievsEl = document.querySelector('.js-reviews-wrapper');
 
 async function getReviews() {
-  const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews'; // Спеціально некоректний URL для тестування
+  const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews'; 
 
   try {
     const response = await axios.get(BASE_URL, {
@@ -23,7 +23,7 @@ async function getReviews() {
       ? `Error ${error.response.status}: ${error.response.statusText}`
       : 'Network error or server unavailable';
     checkScrollToReviews(errorMessage);
-    throw error; // Пробрасываем ошибку для дальнейшей обработки
+    throw error; 
   }
 }
 
@@ -60,7 +60,7 @@ function displayNotFoundMessage() {
 // Функція для відображення повідомлення iziToast
 function displayErrorMessage(message) {
   iziToast.error({
-    title: '', // Залишаємо титул порожнім
+    title: '', 
     message: message, // Точне повідомлення про помилку
     position: 'topRight', 
     timeout: 5000,
