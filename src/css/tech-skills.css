@@ -10,8 +10,8 @@
   padding: 20px 0;
 }
 
-.marquee.light {
-  color: var(--accet-green-dt);
+.marquee.dark {
+  color: var(--white);
   background-color: var(--dark-accet-dt);
 }
 
@@ -55,7 +55,7 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.marquee__square__2.light {
+.marquee__square__2.dark {
   background: var(--accet-green-dt);
 }
 
@@ -84,7 +84,7 @@
 
 }
 
-.marquee_class.light {
+.marquee_class.dark {
   color: var(--accet-green-dt);
   background: var(--charcoal-dt);
 }
@@ -107,7 +107,7 @@
   border-radius: 2px;
 }
 
-.marquee__square.light {
+.marquee__square.dark {
   background: var(--white);
 }
 
