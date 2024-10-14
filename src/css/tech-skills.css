@@ -5,9 +5,14 @@
   font-size: 36px;
   line-height: 48px;
   text-transform: uppercase;
-  color: #292929;
-  background-color: #BCDFD1;
+  color: var(--text-dark);
+  background-color: var(--light-accent);
   padding: 20px 0;
+}
+
+.marquee.dark {
+  color: var(--white);
+  background-color: var(--dark-accet-dt);
 }
 
 .marquee__inner {
@@ -36,7 +41,6 @@
 }
 
 .marquee__square__2 {
-  color: #5D6662;
   font-size: 20px;
   margin: 0 35px;
   vertical-align: middle;
@@ -46,9 +50,13 @@
   height: 8px;
   padding: 0;
   opacity: 1;
-  background: #00B068;
+  background: var(--accet-green);
   border-radius: 2px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.marquee__square__2.dark {
+  background: var(--accet-green-dt);
 }
 
 @keyframes marqueeLine {
@@ -70,10 +78,15 @@
   font-size: 36px;
   line-height: 48px;
   text-transform: uppercase;
-  color: #00B068;
-  background-color: #E4E5E6;
+  color: var(--accet-green);
+  background-color: var(--light-grey);
   padding: 20px 0;
 
+}
+
+.marquee_class.dark {
+  color: var(--accet-green-dt);
+  background: var(--charcoal-dt);
 }
 
 .m_rotate {
@@ -81,7 +94,6 @@
 }
 
 .marquee__square {
-  color: #5D6662;
   font-size: 20px;
   margin: 0 35px;
   vertical-align: middle;
@@ -91,8 +103,12 @@
   height: 8px;
   padding: 0;
   opacity: 1;
-  background: #292929;
+  background: var(--text-dark);
   border-radius: 2px;
+}
+
+.marquee__square.dark {
+  background: var(--white);
 }
 
 to {
