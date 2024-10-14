@@ -1,54 +1,24 @@
-<section class="section box-reviews" id="reviews">
-    <div class="container">
-      <h2 class="reviews-title">Reviews</h2>
-      <div class="swiper">
-        <ul class="reviews-list swiper-wrapper">
-            <li class="swiper-slide one">
-                <div class="reviews-items">
-                  <p class="reviews-list-text">
-                    Work with was extraordinary! He turned out to be a very competent and responsible specialist. 
-                    The projects were completed on time and the result exceeded my expectations.
-                  </p>
-                  <div class="reviews-footer">
-                    <img
-                      srcset="/src/img/reviews/natali.webp 1x, /src/img/reviews/natali.webp 2x"
-                      class="reviews-img"
-                      src="/src/img/reviews/natali.webp"
-                      width="40"
-                      height="40"
-                      alt="Natalia Shevchenko"
-                    />
-                    <h3 class="reviews-list-title">Natalia Shevchenko</h3>
-                  </div>
-                </div>
-              </li>
-          <li class="swiper-slide two">
-            <div class="reviews-items">
-              <p class="reviews-list-text"> I have the honor to recommend him as an exceptional professional in his field. His knowledge and expertise are undeniable. 
-                Cooperation with him always brings impressive results.
-              </p>
-              <div class="reviews-footer">
-                <img
-                srcset="
-                /src/img/reviews/dmytro.webp  1x,
-                /src/img/reviews/dmytro.webp 2x
-                "
-                class="reviews-img"
-                src="/src/img/reviews/dmytro.webp"
-                width="40"
-                height="40"
-                alt="Dmytro Nazarenko"
-              />
-              <h3 class="reviews-list-title">Dmytro Nazarenko</h3>
-            </div>
-            </div>
-          </li>
-        </ul>
-        <!-- Кнопки навігації -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+<section class="section" id="reviews">
+  <div class="container">
+    <h2 class="reviews-title">reviews</h2>
+
+    <!-- Swiper Wrapper -->
+    <div class="swiper">
+      <ul class="reviews-wrapper swiper-wrapper js-reviews-wrapper"></ul>
+
+      <!-- Swiper Arrows -->
+      <div class="reviews-arrows">
+        <button class="reviews-arrow-box-left">
+          <svg width="24" height="24" class="reviews-arrow-left">
+            <use href="/img/sprite.svg#arrow-left" />
+          </svg>
+        </button>
+        <button class="reviews-arrow-box-right">
+          <svg width="24" height="24" class="reviews-arrow-right">
+            <use href="/img/sprite.svg#arrow-right" />
+          </svg>
+        </button>
       </div>
     </div>
-    <!-- Повідомлення про помилку -->
-<div id="error-popup" class="error-popup hidden">Error fetching reviews. Please try again later.</div>
+  </div>
 </section>
