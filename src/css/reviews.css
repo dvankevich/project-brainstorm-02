@@ -74,29 +74,60 @@
     gap: 16px;
 }
 
-.reviews-arrow-box-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--text-dark);
-    border-radius: 8px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background-color: inherit;
-}
 
 .reviews-arrow-box-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--text-dark);
     border-radius: 8px;
     width: 40px;
     height: 40px;
     cursor: pointer;
     background-color: inherit;
+    border: 1px solid var(--light-grey);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.reviews-arrow-box-right:disabled {
+    border: 1px solid var(--light-grey);
+    pointer-events: none;
+}
+
+.reviews-arrow-box-right:hover{
+    background-color: var(--light-grey);
+    border: 1px solid var(--black);
+}
+
+
+.reviews-arrow-box-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: inherit;
+    border: 1px solid var(--light-grey);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-arrow-box-left:disabled {
+    border: 1px solid var(--light-grey);
+    pointer-events: none;
+}
+
+.reviews-arrow-box-left:hover{
+    background-color: var(--light-grey);
+    border: 1px solid var(--black);
+}
+
+
+
+
+
 
 .reviews-arrow-left {
     stroke-width: 2px;
@@ -108,17 +139,13 @@
     stroke: var(--text-dark);
 }
 
-.reviews-arrow-box-left:disabled {
-    border: 1px solid var(--light-grey);
-}
+
 
 .reviews-arrow-box-left:disabled svg {
     stroke: var(--light-grey);
 }
 
-.reviews-arrow-box-right:disabled {
-    border: 1px solid var(--light-grey);
-}
+
 
 .reviews-arrow-box-right:disabled svg {
     stroke: var(--light-grey);
@@ -128,7 +155,7 @@
 
 /* tablet */
 @media screen and (min-width: 768px) {
-  .reviews-title{
+.reviews-title{
     font-size: 108px;
     line-height: 1.14;
     letter-spacing: 0.02em;
