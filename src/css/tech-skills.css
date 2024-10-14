@@ -5,8 +5,8 @@
   font-size: 36px;
   line-height: 48px;
   text-transform: uppercase;
-  color: #292929;
-  background-color: #BCDFD1;
+  color: var(--text-dark);
+  background-color: var(--light-accent);
   padding: 20px 0;
 }
 
@@ -71,7 +71,7 @@
   line-height: 48px;
   text-transform: uppercase;
   color: #00B068;
-  background-color: #E4E5E6;
+  background-color: var(--light-grey);
   padding: 20px 0;
 
 }
@@ -91,7 +91,7 @@
   height: 8px;
   padding: 0;
   opacity: 1;
-  background: #292929;
+  background: var(--text-dark);
   border-radius: 2px;
 }
 
