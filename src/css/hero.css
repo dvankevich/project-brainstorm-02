@@ -35,7 +35,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-dark);
   margin-bottom: 72px;
 }
 
@@ -67,7 +67,7 @@ only screen and (min-resolution: 192dpi) {
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-dark);
 }
 
 .wrapper-order::after{
