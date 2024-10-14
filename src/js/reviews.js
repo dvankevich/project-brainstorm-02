@@ -115,6 +115,37 @@ document.addEventListener('DOMContentLoaded', () => {
       spaceBetween: 30,
     });
   }
+  // Ініціалізація Swiper
+  function initializeSwiper() {
+    const swiper = new Swiper('.swiper', {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+      mousewheel: {
+        enabled: true,
+      },
+      on: {
+        reachBeginning: function () {
+          this.navigation.prevEl.classList.add('swiper-button-disabled');
+        },
+        reachEnd: function () {
+          this.navigation.nextEl.classList.add('swiper-button-disabled');
+        },
+        fromEdge: function () {
+          this.navigation.prevEl.classList.remove('swiper-button-disabled');
+          this.navigation.nextEl.classList.remove('swiper-button-disabled');
+        },
+      },
+    });
+  }
 
   // Викликаємо функцію отримання відгуків при завантаженні сторінки
   fetchReviews();
