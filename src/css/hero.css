@@ -61,11 +61,13 @@ only screen and (min-resolution: 192dpi) {
 
 .hero-order-text {
   z-index: 2;
+  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
+  font-size: 20px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--black);
 }
 
 .wrapper-order::after{
