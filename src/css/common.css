@@ -14,6 +14,12 @@
   --dark-accet-dt: #204136;
   --hover-green-dt: #009156;
   --error: #e74a3b;
+
+  --text-light: #f0f0f0;
+  --text-dark: #292929;
+    
+  --mobile-menu-light: #f0f0f0;
+  --mobile-menu-dark: #1e2023;
 }
 
 :root {

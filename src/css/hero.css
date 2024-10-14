@@ -11,16 +11,16 @@
 .hero-title-span {
   color: #00b068;
 }
-.hero-section {
-  background-image: image-set(
-    url(../img/hero/hero64.webp) 1x,
-    url(../img/hero/hero64@2x.webp) 2x
-  );
+.hero-wrapper {
+  background-image: url(../img/hero/mobTop-min.png),
+    url(../img/hero/mobBottom-min.png);
+  background-size: contain, cover;
+  background-position: top left, bottom center;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
-
+.hero-dev-img {
+  display: none;
+}
 .hero-icon {
   fill: none;
   stroke-width: 2px;
@@ -56,21 +56,89 @@
 .hero-text-span {
   color: #00b068;
 }
+.hero-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #e4e5e6;
+  height: 232px;
+}
 .hero-list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 24px;
-}
-.hero-cover {
-  background: #e4e5e6;
   padding: 32px 0px;
-  max-width: 360px;
-  height: 232px;
+  text-align: center;
 }
+
 .hero-link {
   text-decoration: none;
   color: #292929;
   font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    background-image: url(../img/hero/decorTabletTop-min.png),
+      url(../img/hero/decorTabBottom-min.png);
+    background-position: right, bottom center;
+  }
+  .hero-title {
+    max-width: 704px;
+    text-align: center;
+    font-size: 136px;
+  }
+  .hero-order-link {
+    font-size: 20px;
+  }
+  .hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 80px;
+  }
+  .hero-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .hero-cover {
+    height: 104px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-wrapper {
+    background-image: url(../img/hero/decorDescTop-min.png),
+      url(../img/hero/decorDescBottom-min.png);
+    background-position: right, bottom center;
+  }
+  .hero-dev-img {
+    display: inline;
+  }
+  .hero-img-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+  }
+  .hero-title {
+    font-weight: 400;
+    font-size: 136px;
+    line-height: 1.14706;
+    letter-spacing: 0.01em;
+  }
+  .hero-wrapper-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 136px;
+  }
+  .hero-text {
+    max-width: 592px;
+  }
 }
