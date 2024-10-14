@@ -35,6 +35,11 @@
   });
 })();
 
+const marquee = document.querySelector('.marquee');
+const marqueeClass = document.querySelector('.marquee_class');
+const marqueeSquare = document.querySelectorAll('.marquee__square');
+const marqueeSquare2 = document.querySelectorAll('.marquee__square__2');
+
 document.querySelectorAll('a[href^="#"').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
@@ -91,11 +96,29 @@ const checkThemeChange = () => {
 
 const setDarkMode = () => {
   body.classList = 'dark';
+  marquee.classList.add('dark');
+  marqueeClass.classList.add('dark');
+  marqueeSquare.forEach(item => {
+    item.classList.add('dark');
+  });
+  marqueeSquare2.forEach(item => {
+    item.classList.add('dark');
+  });
   localStorage.setItem('theme', 'dark');
   checkbox.checked = true;
 };
 const setLightMode = () => {
   body.classList = 'light';
+
+  marquee.classList.remove('dark');
+  marqueeClass.classList.remove('dark');
+  marqueeSquare.forEach(item => {
+    item.classList.remove('dark');
+  });
+  marqueeSquare2.forEach(item => {
+    item.classList.remove('dark');
+  });
+  localStorage.setItem('theme', 'dark');
   localStorage.setItem('theme', 'light');
 
   checkbox.checked = false;
