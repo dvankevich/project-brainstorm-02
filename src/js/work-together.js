@@ -1,4 +1,4 @@
-console.log('work-together');
+
 document
   .getElementById('form')
   .addEventListener('submit', async function (event) {

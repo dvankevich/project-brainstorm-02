@@ -8,7 +8,7 @@
     text-transform: uppercase;
     text-align: start;
     margin-bottom: 40px;
-    color: var(--black);
+    color: var(--text-dark);
   }
   .aboutme-title > span {
     color: var(--accet-green);
@@ -22,7 +22,7 @@
     margin-bottom: 40px;
   }
   .aboutme-bio-container {
-    width: 320px;
+    max-width: 320px;
     margin-bottom: 40px;
   }
 
@@ -32,7 +32,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--text-dark);
     margin-bottom: 32px;
   }
 
@@ -41,12 +41,11 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: var(--black);
+    color: var(--text-dark);
     margin-bottom: 24px;
   }
 
   .edc-role-container {
-    margin-bottom: 80px;
   }
   .edc-role-title {
     font-weight: 500;
@@ -54,7 +53,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--text-dark);
     margin-bottom: 32px;
   }
 
@@ -66,7 +65,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: var(--black);
+    color: var(--text-dark);
   }
   .edc-role-item::before {
     content: '';
@@ -90,13 +89,10 @@
 
   .img-bio-container {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-
+    gap: 32px;
     position: relative;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start;
     background-image: url(/img/background-img/decor-bg-2.webp);
     background-repeat: no-repeat;
@@ -106,8 +102,9 @@
 
   .aboutme-bio-container {
     display: flex;
+
     flex-direction: column;
-    width: 336px;
+    max-width: 336px;
   }
   .aboutme-bio-title {
     font-size: 36px;
@@ -130,7 +127,6 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
-    margin-bottom: 124px;
   }
   .edc-role-title {
     font-size: 36px;
@@ -149,29 +145,29 @@
 @media screen and (min-width: 1280px) {
   .aboutme-bio-container {
     flex: none;
-    width: 488px;
+    max-width: 488px;
   }
 
   .img-bio-container {
+    display: flex;
     background-size: 394px 297px;
+    gap: 136px;
   }
 
   .aboutme-img-container {
-    margin-left: 208px;
-    margin-bottom: 80px;
+    padding-left: 208px;
   }
   .aboutme-img {
     width: 384px;
     padding-top: 312px;
   }
   .edc-role-container {
-    margin-bottom: 164px;
     display: flex;
     flex-direction: row;
     width: 904px;
     height: 280px;
     gap: 136px;
-    margin-left: 208px;
+    padding: 0 208px;
   }
 
   .edc-role-list {
