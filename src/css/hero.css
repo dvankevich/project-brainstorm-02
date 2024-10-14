@@ -13,8 +13,8 @@
 }
 .hero-wrapper {
   background-image: url(../img/background-img/decor-bg-1mob.webp);
-  background-size: 351px 469px;
-  background-position: top right;
+  background-size: 360px 952px;
+  background-position: right bottom;
   background-repeat: no-repeat;
 }
 .hero-dev-img {
@@ -84,7 +84,7 @@
 @media screen and (min-width: 768px) {
   .hero-wrapper {
     background-image: url(../img/background-img/decor-bg-1tab.webp);
-    background-size: 356px 708px;
+    background-size: 704px 896px;
     background-position: top right;
   }
   .hero-title {
@@ -106,6 +106,7 @@
   }
   .hero-cover {
     height: 104px;
+    align-content: center;
   }
   .hero-order-link::before {
     width: 261px;
