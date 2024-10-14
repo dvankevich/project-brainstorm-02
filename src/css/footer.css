@@ -16,7 +16,7 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--text-dark);
   margin-bottom: 32px;
 }
 
@@ -35,7 +35,7 @@ color: var(--accet-green);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--text-dark);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
