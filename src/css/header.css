@@ -88,7 +88,7 @@ body.light {
     -moz-transition: 0.5s ease;
     -ms-transition: 0.5s ease;
     -o-transition: 0.5s ease;
-    left: 20px;
+    left: 6px;
 }
 
 .label:hover {
@@ -167,13 +167,13 @@ body.light {
 .header {
     width: 100%;
     height: 64px;
+    padding-top: 16px;
 }
 
 .header-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 20px;
 }
 
 .header-logo {
@@ -223,7 +223,7 @@ body.light {
 
 @media screen and (min-width: 768px) {
     .header {
-        height: 96px;
+        padding-top: 25px;
     }
 
     .header-section {
@@ -231,8 +231,7 @@ body.light {
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 78px;
-        padding: 36px 32px;
+        gap: 75px;
     }
 
     .header-logo {
@@ -259,7 +258,6 @@ body.light {
         justify-content: flex-start;
         flex-direction: row;
         gap: 20px;
-        width: 393px;
     }
 
     .header-link {
@@ -289,7 +287,7 @@ body.light {
 
 @media screen and (min-width: 1280px) {
     .header {
-        height: 96px;
+        padding-top: 25px;
     }
 
     .header-section {
@@ -298,7 +296,6 @@ body.light {
         justify-content: flex-start;
         flex-direction: row;
         gap: 315px;
-        padding: 36px 32px;
     }
 
     .header-logo {
@@ -324,8 +321,7 @@ body.light {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 40px;
-        width: 678px;
+        gap: 38px;
     }
 
     .header-link {
