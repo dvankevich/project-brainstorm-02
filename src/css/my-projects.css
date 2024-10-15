@@ -28,7 +28,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 
 .mp-name {
@@ -37,7 +37,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  padding: 16px 0;
+  margin: 16px 0;
 }
 
 .mp-visit-wrapper {
@@ -79,6 +79,7 @@
 .mp-button-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .mp-load-more-button {
@@ -87,7 +88,6 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   padding: 12px 0;
-  margin-top: 40px;
   position: relative;
   text-transform: uppercase;
   color: var(--text-dark);
@@ -136,11 +136,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    margin-top: 20px;
   }
 
   .mp-skills {
-    padding-top: 16px;
+    margin-top: 16px;
   }
 
   .mp-name {
