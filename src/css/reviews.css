@@ -29,12 +29,14 @@
 
 }
 
+.reviews-wrapper{
+    margin-bottom: 24px;
+}
 
 .reviews-wrapper-cart {
     background-color: var(--light-grey);
     border-radius: 16px;
     padding: 32px;
-    margin-bottom: 24px;
 }
 
 .swiper-slide{
@@ -135,6 +137,7 @@
 }
 
 .reviews-arrow-right {
+    transform: rotate(180deg);
     stroke-width: 2px;
     stroke: var(--text-dark);
 }
@@ -179,7 +182,6 @@
     letter-spacing: 0.1em;
 
 }
-
 
 
 }
