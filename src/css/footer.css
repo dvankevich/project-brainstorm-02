@@ -2,10 +2,15 @@
   padding-top: 40px;
 }
 
+.footer-line{
+border-top: 1px solid var(--light-grey)
+}
+
 .footer-cont{
   padding-top: 40px;
   padding-bottom: 24px;
 }
+
 
 .footer-logo {
   display: block;
