@@ -1,4 +1,3 @@
-
 document
   .getElementById('form')
   .addEventListener('submit', async function (event) {
@@ -8,7 +7,6 @@ document
     const modal = document.getElementById('modal');
     const iconOk = document.querySelector('.icon-ok');
     const sendButton = document.querySelector('.send-btn');
-
     const formData = {
       email: emailInput.value,
       comment: messageInput.value,
@@ -49,13 +47,19 @@ document
     modal.style.display = 'none';
   });
 const emailInput = document.getElementById('email');
+
 const iconOk = document.querySelector('.icon-ok');
+const emailError = document.getElementById('email-error');
 const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
 emailInput.addEventListener('input', function () {
   if (emailPattern.test(emailInput.value)) {
+    emailInput.classList.remove('invalid');
+    emailError.style.display = 'none';
     iconOk.style.display = 'block';
   } else {
+    emailInput.classList.add('invalid');
+    emailError.style.display = 'block';
     iconOk.style.display = 'none';
   }
 });

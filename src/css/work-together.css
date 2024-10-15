@@ -1,7 +1,3 @@
-.work-together {
-}
-.work-together-container {
-}
 
 .title-work-together {
   font-family: var(--second-family);
@@ -89,10 +85,9 @@
 .contact-input:focus {
   box-shadow: 1px 1px 3px rgb(169, 169, 169);
 }
-.contact-input::placeholder{
-color: var(--text-dark);
+.contact-input::placeholder {
+  color: var(--text-dark);
 }
-
 
 .icon-ok {
   position: absolute;
@@ -122,8 +117,28 @@ color: var(--text-dark);
   box-shadow: 1px 1px 3px rgb(169, 169, 169);
 }
 
-.contact-text::placeholder{
-color: var(--text-dark);
+.contact-text::placeholder {
+  color: var(--text-dark);
+}
+.error-email {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: var(--error);
+  margin-top: -28px;
+  display: none;
+}
+.error-message {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: var(--error);
+  margin-top: -28px;
+  display: none;
 }
 
 .send-btn {
@@ -267,8 +282,8 @@ color: var(--text-dark);
     background-image: url('../img/background-img/decor-bg-3.webp');
     background-repeat: no-repeat;
   }
-  @media only screen and(-webkit-min-device-pixel-ratio:2),
-    only screen and(min-resolution: 192dpi) {
+  @media only screen and (-webkit-min-device-pixel-ratio:2),
+    only screen and (min-resolution: 192dpi) {
     .decor {
       background-image: url(../img/background-img/decor-bg-3-desk-2x.webp);
     }
