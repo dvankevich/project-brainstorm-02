@@ -3,7 +3,8 @@
 }
 
 .footer-line{
-border-top: 1px solid var(--light-grey)
+border-top: 1px solid;
+background-color: var(--light-grey);
 }
 
 .footer-cont{
