@@ -39,6 +39,7 @@ const marquee = document.querySelector('.marquee');
 const marqueeClass = document.querySelector('.marquee_class');
 const marqueeSquare = document.querySelectorAll('.marquee__square');
 const marqueeSquare2 = document.querySelectorAll('.marquee__square__2');
+const footerLine = document.querySelector('.footer-line');
 
 document.querySelectorAll('a[href^="#"').forEach(link => {
   link.addEventListener('click', function (e) {
@@ -104,9 +105,11 @@ const setDarkMode = () => {
   marqueeSquare2.forEach(item => {
     item.classList.add('dark');
   });
+  footerLine.classList.add('dark');
   localStorage.setItem('theme', 'dark');
   checkbox.checked = true;
 };
+
 const setLightMode = () => {
   body.classList = 'light';
 
@@ -118,6 +121,8 @@ const setLightMode = () => {
   marqueeSquare2.forEach(item => {
     item.classList.remove('dark');
   });
+  footerLine.classList.remove('dark');
+
   localStorage.setItem('theme', 'dark');
   localStorage.setItem('theme', 'light');
 
