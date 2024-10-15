@@ -267,8 +267,8 @@ color: var(--text-dark);
     background-image: url('../img/background-img/decor-bg-3.webp');
     background-repeat: no-repeat;
   }
-  @media only screen and(-webkit-min-device-pixel-ratio:2),
-    only screen and(min-resolution: 192dpi) {
+  @media only screen and (-webkit-min-device-pixel-ratio:2),
+    only screen and (min-resolution: 192dpi) {
     .decor {
       background-image: url(../img/background-img/decor-bg-3-desk-2x.webp);
     }
