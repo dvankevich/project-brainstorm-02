@@ -28,7 +28,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 
 .mp-name {
@@ -37,7 +37,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  padding: 16px 0;
+  margin: 16px 0;
 }
 
 .mp-visit-wrapper {
@@ -140,7 +140,7 @@
   }
 
   .mp-skills {
-    padding-top: 16px;
+    margin-top: 16px;
   }
 
   .mp-name {
