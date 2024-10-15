@@ -173,11 +173,11 @@
 
   .mp-list {
     gap: 80px;
+    padding: 0 136px;
   }
 
   .mp-list-item {
     display: flex;
     flex-direction: column;
-    padding: 0 136px;
   }
 }
