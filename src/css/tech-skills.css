@@ -3,6 +3,11 @@
   overflow: hidden;
 }
 
+.m_rotate{
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
 .marquee {
   color: var(--text-dark);
   background-color: var(--light-accent);
@@ -121,7 +126,7 @@
     padding: 40px;
   }
 
-  .marquee__line{
+  .marquee__line,.marquee__line_2{
       font-size: 36px;
       line-height: 1.33;
       letter-spacing: 0.01em;
