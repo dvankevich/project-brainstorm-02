@@ -27,6 +27,7 @@
   text-transform: uppercase;
   color: var(--text-dark);
   margin-bottom: 32px;
+  text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.308);
 }
 
 .footer-logo-span {

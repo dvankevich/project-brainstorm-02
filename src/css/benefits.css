@@ -8,6 +8,7 @@
     color: var(--text-dark);
     margin-bottom: 40px;
     max-width: 320px;
+    text-shadow: 10px 5px 6px rgba(0, 0, 0, 0.308);
 }
 
 .benefits-title-color {

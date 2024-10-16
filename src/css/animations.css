@@ -1,0 +1,44 @@
+
+.element-animation {
+  /* Приховуєм елемент у початковому стані */
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 2000ms;
+  transform: translateY(0%);
+}
+
+
+
+.element-animation-right {
+  /* Приховуємо елемент у початковому стані */
+  opacity: 0;
+  transform: translateX(-100%);
+  /* Зсув зліва */
+}
+
+.element-animation-right.element-show-right {
+  opacity: 1;
+  transition: all 2000ms;
+  transform: translateX(0%);
+  /* Повертається у початкову позицію */
+}
+
+
+.element-animation-left {
+  /* Приховуємо елемент у початковому стані */
+  opacity: 0;
+  transform: translateX(100%);
+  /* Зсув зліва */
+}
+
+.element-animation-left.element-show-left {
+  opacity: 1;
+  transition: all 2000ms;
+  /* Час анімації */
+  transform: translateX(0%);
+  /* Повертається у початкову позицію */
+}

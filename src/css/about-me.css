@@ -9,11 +9,10 @@
     text-align: start;
     margin-bottom: 40px;
     color: var(--text-dark);
+    text-shadow: 10px 5px 6px rgba(0, 0, 0, 0.308);
   }
   .aboutme-title > span {
     color: var(--accet-green);
-  }
-  .aboutme-img-container {
   }
   .aboutme-img {
     display: block;
