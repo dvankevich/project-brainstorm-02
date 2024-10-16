@@ -49,7 +49,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  animation: marqueeLine 30s linear infinite;
+  animation: marqueeLine 70s linear infinite;
 }
 
 .marquee__line_2{
@@ -63,7 +63,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  animation: marqueeLineRight 30s linear infinite;
+  animation: marqueeLineRight 70s linear infinite;
 }
 
 
