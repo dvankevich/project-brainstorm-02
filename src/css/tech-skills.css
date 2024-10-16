@@ -44,8 +44,23 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  animation: marqueeLine 15s linear infinite;
+  animation: marqueeLine 30s linear infinite;
 }
+
+.marquee__line_2{
+  flex-shrink: 0;
+  margin: 0;
+  min-width: 200%;
+  white-space: nowrap;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  animation: marqueeLineRight 30s linear infinite;
+}
+
 
 .marquee__square__2 {
   font-size: 20px;
@@ -84,6 +99,16 @@
 
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeLineRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 
