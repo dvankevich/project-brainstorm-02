@@ -24,11 +24,11 @@ only screen and (min-resolution: 192dpi) {
   }
 }
 
-.hero-wrapper-top{
+.hero-wrapper-top {
   margin-bottom: 72px;
 }
 
-.hero-wrapper-down{
+.hero-wrapper-down {
   margin-bottom: 72px;
 }
 
@@ -40,7 +40,7 @@ only screen and (min-resolution: 192dpi) {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-dark);
-  text-shadow: 10px 5px 6px rgba(0, 0, 0, 0.308);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
 
 }
 
@@ -83,11 +83,11 @@ only screen and (min-resolution: 192dpi) {
   transform: translate(92%, 0);
 }
 
-@media screen and (max-width: 338px){
+@media screen and (max-width: 338px) {
   .wrapper-order::after {
-      width: 150px;
-      transform: translate(92%, 0);
-    }
+    width: 150px;
+    transform: translate(92%, 0);
+  }
 }
 
 .hero-descr {
@@ -169,12 +169,12 @@ only screen and (min-resolution: 192dpi) {
     }
   }
 
-    .hero-wrapper-top {
-      margin-bottom: 92px;
-    }
+  .hero-wrapper-top {
+    margin-bottom: 92px;
+  }
 
 
-    
+
   .hero-title {
     font-size: 136px;
     line-height: 1.14;

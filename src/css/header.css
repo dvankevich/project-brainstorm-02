@@ -89,7 +89,7 @@ body.light {
     -ms-transition: 0.5s ease;
     -o-transition: 0.5s ease;
     left: 6px;
-    
+
 }
 
 .label:hover {
@@ -185,7 +185,7 @@ body.light {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-dark);
-    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.308);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
 }
 
 .header-logo-tech {

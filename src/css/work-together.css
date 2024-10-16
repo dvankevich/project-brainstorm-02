@@ -1,4 +1,3 @@
-
 .title-work-together {
   font-family: var(--second-family);
   font-weight: 400;
@@ -8,11 +7,13 @@
   text-transform: uppercase;
   color: var(--text-dark);
   margin-bottom: 40px;
-  text-shadow: 10px 5px 6px rgba(0, 0, 0, 0.308);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
 }
+
 .tech-work-together {
   color: var(--accet-green);
 }
+
 .text-work-together {
   font-weight: 400;
   font-size: 18px;
@@ -22,11 +23,13 @@
   color: var(--text-dark);
   margin-bottom: 32px;
 }
+
 .list-work-together {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .item-work-together {
   font-family: var(--font-family);
   font-weight: 300;
@@ -39,10 +42,12 @@
   align-items: center;
   gap: 16px;
 }
+
 .container-icon {
   display: flex;
   gap: 16px;
 }
+
 .icon-contacts {
   stroke: var(--accet-green);
   flex-shrink: 0;
@@ -56,10 +61,12 @@
   color: var(--text-dark);
   transition: color 0.3s ease;
 }
+
 .link-work-together:hover,
 .link-work-together:focus {
   color: var(--accet-green);
 }
+
 .contact-form {
   width: 100%;
   /* height: 208px; */
@@ -67,6 +74,7 @@
   display: grid;
   position: relative;
 }
+
 .contact-input {
   background: var(--light-grey);
   border-radius: 8px;
@@ -82,10 +90,12 @@
   color: var(--text-dark);
   outline: none;
 }
+
 .contact-input:hover,
 .contact-input:focus {
   box-shadow: 1px 1px 3px rgb(169, 169, 169);
 }
+
 .contact-input::placeholder {
   color: var(--text-dark);
 }
@@ -97,6 +107,7 @@
   fill: green;
   display: none;
 }
+
 .contact-text {
   border-radius: 8px;
   padding: 16px;
@@ -113,6 +124,7 @@
   margin-bottom: 32px;
   outline: none;
 }
+
 .contact-text:hover,
 .contact-text:focus {
   box-shadow: 1px 1px 3px rgb(169, 169, 169);
@@ -121,6 +133,7 @@
 .contact-text::placeholder {
   color: var(--text-dark);
 }
+
 .error-email {
   font-family: var(--font-family);
   font-weight: 300;
@@ -131,6 +144,7 @@
   margin-top: -28px;
   display: none;
 }
+
 .error-message {
   font-family: var(--font-family);
   font-weight: 300;
@@ -158,10 +172,12 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .send-btn:hover,
 .send-btn:focus {
   background-color: var(--hover);
 }
+
 .modal-window {
   display: none;
   position: fixed;
@@ -172,9 +188,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .modal-window {
   transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
 .modal-content {
   position: absolute;
   top: 50%;
@@ -196,13 +214,16 @@
   background: none;
   cursor: pointer;
 }
+
 .modal-close-btn:hover {
   transform: scale(1.1);
 }
+
 .modal-close-icon {
   stroke-width: 2px;
   stroke: var(--text-dark);
 }
+
 .modal-title {
   font-weight: 400;
   font-size: 20px;
@@ -237,6 +258,7 @@
       url('../img/background-img/decor-bg-7tab-2x.webp');
     background-repeat: no-repeat;
   }
+
   .title-work-together {
     width: 100%;
     font-size: 108px;
@@ -251,13 +273,16 @@
     font-size: 20px;
     line-height: 160%;
   }
+
   .item-work-together {
     margin-right: 16px;
   }
+
   .list-work-together {
     flex-direction: row;
     gap: 0;
   }
+
   .work-together-container {
     position: relative;
   }
@@ -265,6 +290,7 @@
   .send-btn {
     width: 173px;
   }
+
   .modal-content {
     border: 1px solid var(--light-grey);
     border-radius: 16px;
@@ -283,33 +309,40 @@
     background-image: url('../img/background-img/decor-bg-3.webp');
     background-repeat: no-repeat;
   }
+
   @media only screen and (-webkit-min-device-pixel-ratio:2),
-    only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 192dpi) {
     .decor {
       background-image: url(../img/background-img/decor-bg-3-desk-2x.webp);
     }
   }
+
   .title-work-together {
     width: 527px;
     margin-bottom: 80px;
   }
+
   .text-work-together {
     margin-bottom: 120px;
   }
+
   .list-work-together {
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 258px;
   }
+
   .work-together-container {
     display: flex;
     justify-content: space-between;
   }
+
   .work-together-right {
     display: flex;
     align-items: end;
   }
+
   .contact-form {
     width: 592px;
     margin: 0;

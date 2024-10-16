@@ -9,17 +9,20 @@
     text-align: start;
     margin-bottom: 40px;
     color: var(--text-dark);
-    text-shadow: 10px 5px 6px rgba(0, 0, 0, 0.308);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
   }
-  .aboutme-title > span {
+
+  .aboutme-title>span {
     color: var(--accet-green);
   }
+
   .aboutme-img {
     display: block;
     border-radius: 16px;
     width: 320px;
     margin-bottom: 40px;
   }
+
   .aboutme-bio-container {
     max-width: 320px;
     margin-bottom: 40px;
@@ -57,6 +60,7 @@
   .edc-role-list {
     margin-bottom: 40px;
   }
+
   .edc-role-item {
     font-weight: 300;
     font-size: 16px;
@@ -64,6 +68,7 @@
     letter-spacing: 0.03em;
     color: var(--text-dark);
   }
+
   .edc-role-item::before {
     content: '';
     display: inline-block;
@@ -103,6 +108,7 @@
     flex-direction: column;
     max-width: 336px;
   }
+
   .aboutme-bio-title {
     font-size: 36px;
     line-height: 1.33333;
@@ -113,22 +119,26 @@
     position: relative;
     flex-shrink: 0;
   }
+
   .aboutme-img {
     width: 336px;
     margin-bottom: 60px;
     padding-top: 408px;
   }
+
   .edc-role-container {
     width: 704px;
     display: flex;
     flex-direction: row;
     gap: 32px;
   }
+
   .edc-role-title {
     font-size: 36px;
     line-height: 1.33333;
     letter-spacing: 0.01em;
   }
+
   .edc-role-list {
     width: 336px;
     height: 200px;
@@ -153,10 +163,12 @@
   .aboutme-img-container {
     padding-left: 208px;
   }
+
   .aboutme-img {
     width: 384px;
     padding-top: 312px;
   }
+
   .edc-role-container {
     display: flex;
     flex-direction: row;

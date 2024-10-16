@@ -8,7 +8,7 @@
     color: var(--text-dark);
     margin-bottom: 40px;
     max-width: 320px;
-    text-shadow: 10px 5px 6px rgba(0, 0, 0, 0.308);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
 }
 
 .benefits-title-color {
@@ -64,17 +64,21 @@
         max-width: 704px;
         margin-bottom: 0;
     }
+
     .benefits-list {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .benefits-list-item:first-child {
         margin-left: 368px;
     }
+
     .benefits-list-item-title {
         font-size: 20px;
         line-height: 1.6;
     }
+
     .benefits-list-item-text {
         max-width: 336px;
     }
@@ -84,11 +88,13 @@
     .benefits-section {
         padding-top: 0;
     }
+
     .benefits-title {
         min-width: 690px;
         padding-top: 116px;
         padding-bottom: 304px;
     }
+
     .benefits-container {
         position: relative;
         background-image: url(../img/background-img/decor-bg-3.webp);
@@ -96,19 +102,23 @@
         background-size: 526px 408px;
         background-position: bottom 384px right 32px;
     }
-        @media (min-resolution: 192dpi) {
-            .benefits-container {
-                background-image: url(../img/background-img/decor-bg-3-desk-2x.webp);
-            }
+
+    @media (min-resolution: 192dpi) {
+        .benefits-container {
+            background-image: url(../img/background-img/decor-bg-3-desk-2x.webp);
         }
+    }
+
     .benefits-list-item-text {
         max-width: 384px;
     }
+
     .benefits-list {
         position: absolute;
         top: 392px;
     }
-        .benefits-list-item:first-child {
-            margin-left: 832px;
-        }
+
+    .benefits-list-item:first-child {
+        margin-left: 832px;
+    }
 }

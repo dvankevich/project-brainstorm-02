@@ -1,12 +1,12 @@
-.reviev-not-found-wrapper{
-    margin: 0 auto; 
+.reviev-not-found-wrapper {
+    margin: 0 auto;
     border: 1px solid #b4b3b3;
     border-radius: 8px;
     padding: 16px;
 }
 
 
-.revievs-not-found{
+.revievs-not-found {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 24px;
@@ -26,11 +26,11 @@
     color: var(--text-dark);
     text-align: center;
     margin-bottom: 40px;
-    text-shadow: 10px 5px 6px rgba(0, 0, 0, 0.308);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
 
 }
 
-.reviews-wrapper{
+.reviews-wrapper {
     margin-bottom: 24px;
 }
 
@@ -40,7 +40,7 @@
     padding: 32px;
 }
 
-.swiper-slide{
+.swiper-slide {
     min-height: 369px !important;
     display: flex !important;
     flex-direction: column;
@@ -97,7 +97,7 @@
     pointer-events: none;
 }
 
-.reviews-arrow-box-right:hover{
+.reviews-arrow-box-right:hover {
     background-color: var(--light-grey);
     border: 1px solid var(--black);
 }
@@ -122,7 +122,7 @@
     pointer-events: none;
 }
 
-.reviews-arrow-box-left:hover{
+.reviews-arrow-box-left:hover {
     background-color: var(--light-grey);
     border: 1px solid var(--black);
 }
@@ -159,30 +159,30 @@
 
 /* tablet */
 @media screen and (min-width: 768px) {
-.reviews-title{
-    font-size: 108px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    .reviews-title {
+        font-size: 108px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
 
-    margin-bottom: 60px;
+        margin-bottom: 60px;
     }
 
     .swiper-slide {
-    min-height: 235px !important;
-}
+        min-height: 235px !important;
+    }
 
-.reviev-not-found-wrapper {
-    border-radius: 16px;
-    padding: 32px;
-}
+    .reviev-not-found-wrapper {
+        border-radius: 16px;
+        padding: 32px;
+    }
 
 
-.revievs-not-found {
-    font-size: 32px;
-    line-height: 1.5;
-    letter-spacing: 0.1em;
+    .revievs-not-found {
+        font-size: 32px;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
 
-}
+    }
 
 
 }
@@ -190,24 +190,21 @@
 /* desktop */
 @media screen and (min-width: 1280px) {
 
-  .reviews-title{
-    margin-bottom: 80px;
-  }
-
-    .reviews-arrow-box-left{
-      width: 48px;
-      height: 48px;
+    .reviews-title {
+        margin-bottom: 80px;
     }
 
-    .reviews-arrow-box-right{
-      width: 48px;
-      height: 48px;
+    .reviews-arrow-box-left {
+        width: 48px;
+        height: 48px;
     }
 
-  .reviews-wrapper{
-    display: flex;
-  }
+    .reviews-arrow-box-right {
+        width: 48px;
+        height: 48px;
+    }
+
+    .reviews-wrapper {
+        display: flex;
+    }
 }
-
-
-
