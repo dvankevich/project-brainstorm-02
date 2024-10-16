@@ -45,8 +45,6 @@
     margin-bottom: 24px;
   }
 
-  .edc-role-container {
-  }
   .edc-role-title {
     font-weight: 500;
     font-size: 32px;
@@ -123,7 +121,6 @@
   }
   .edc-role-container {
     width: 704px;
-    height: 280px;
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -165,9 +162,8 @@
     display: flex;
     flex-direction: row;
     width: 904px;
-    height: 280px;
     gap: 136px;
-    padding: 0 208px;
+    padding-left: 208px;
   }
 
   .edc-role-list {
